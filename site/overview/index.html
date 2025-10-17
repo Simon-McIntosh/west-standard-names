@@ -1,0 +1,2225 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="WEST tokamak standard names using DD version 3.42.2">
+      
+      
+        <meta name="author" content="WEST Team">
+      
+      
+        <link rel="canonical" href="https://west-standard-names.github.io/west-standard-names/overview/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../tags/coils-and-control/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Overview - WEST Standard Names Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#all-standard-names-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="WEST Standard Names Documentation" class="md-header__button md-logo" aria-label="WEST Standard Names Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WEST Standard Names Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/west-standard-names/west-standard-names" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    west-standard-names
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Standard Names
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="WEST Standard Names Documentation" class="md-nav__button md-logo" aria-label="WEST Standard Names Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    WEST Standard Names Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/west-standard-names/west-standard-names" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    west-standard-names
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Standard Names
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Standard Names
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    By Category
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            By Category
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/coils-and-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coils And Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/core-physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Physics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/equilibrium/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Equilibrium
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/fueling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fueling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/fundamental/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamental
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/ic-heating/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ic Heating
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/interferometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interferometry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/magnetics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Magnetics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/radiation-diagnostics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Radiation Diagnostics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/spectroscopy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spectroscopy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="all-standard-names-overview">All Standard Names Overview<a class="headerlink" href="#all-standard-names-overview" title="Permanent link">&para;</a></h1>
+<p>This page provides a complete list of all standard names across all categories.</p>
+<table>
+<thead>
+<tr>
+<th>Standard Name</th>
+<th>Unit</th>
+<th>Description</th>
+<th>Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>area_of_poloidal_magnetic_field_probe</code></td>
+<td>m^2</td>
+<td>Effective sensing area of a single turn of poloidal field probe coil.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>area_of_toroidal_magnetic_field_probe</code></td>
+<td>m^2</td>
+<td>Effective sensing area of a single turn of toroidal field probe coil.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>atomic_mass_number_of_isotope</code></td>
+<td>u</td>
+<td>Atomic mass number (A) of an isotope or element in atomic mass units.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>brightness_from_soft_xray_detector</code></td>
+<td>W.m^-2.sr^-1</td>
+<td>Specific intensity (power per unit area per unit solid angle) measured by soft X-ray detector.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>capacitance_of_ion_cyclotron_heating_antenna_matching_element</code></td>
+<td>F</td>
+<td>Capacitance value of impedance matching element in ion cyclotron heating system.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>central_wavelength_of_spectral_line_from_spectrometer</code></td>
+<td>m</td>
+<td>Central wavelength of an identified spectral line after processing.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>cold_neutral_fraction_of_isotope</code></td>
+<td>-</td>
+<td>Fraction of cold neutrals relative to total neutrals for a specific isotope.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>cold_neutral_temperature_of_isotope</code></td>
+<td>eV</td>
+<td>Temperature characterizing the cold neutral population for a specific isotope.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>cross_sectional_area_of_flux_surface</code></td>
+<td>m^2</td>
+<td>Poloidal cross-sectional area enclosed by flux surface.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>cross_sectional_area_of_plasma_boundary</code></td>
+<td>m^2</td>
+<td>Cross-sectional area of plasma boundary in poloidal plane.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>current_amplitude_from_ion_cyclotron_heating_antenna</code></td>
+<td>A</td>
+<td>Amplitude of current signal measured at ion cyclotron heating antenna module.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>current_from_passive_loop</code></td>
+<td>A</td>
+<td>Induced current flowing in a passive axisymmetric conductor loop.</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>current_from_poloidal_field_coil</code></td>
+<td>A</td>
+<td>Electric current flowing through a poloidal field coil (per turn).</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>diamagnetic_flux</code></td>
+<td>Wb</td>
+<td>Diamagnetic flux measured by diamagnetic loop diagnostic.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>distance_to_conductor_from_antenna_strap</code></td>
+<td>m</td>
+<td>Distance from antenna strap to conducting wall or conductor behind the strap.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>effective_charge</code></td>
+<td>-</td>
+<td>Effective plasma charge number characterizing average ion charge state.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>electron_count</code></td>
+<td>-</td>
+<td>Total number of electrons in the plasma volume.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>electron_density</code></td>
+<td>m^-3</td>
+<td>Total electron number density including thermal and non-thermal populations.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>electron_line_averaged_density_from_interferometer_beam</code></td>
+<td>m^-3</td>
+<td>Line-averaged electron density obtained by dividing line integral by path length.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>electron_line_integrated_density_from_interferometer_beam</code></td>
+<td>m^-2</td>
+<td>Line-integrated electron density measured by interferometer along beam path.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>electron_pressure</code></td>
+<td>Pa</td>
+<td>Total electron pressure including thermal and non-thermal contributions.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>electron_temperature</code></td>
+<td>eV</td>
+<td>Electron temperature in plasma.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>electron_volume_averaged_density</code></td>
+<td>m^-3</td>
+<td>Volume-averaged electron density estimated from multiple interferometer chords.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>elongation_of_plasma_boundary</code></td>
+<td>-</td>
+<td>Elongation of plasma boundary cross-section.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>equilibrium_reconstruction_weight_of_faraday_rotation_angle_constraint</code></td>
+<td>-</td>
+<td>Weight assigned to Faraday angle measurement in reconstruction cost function.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>equilibrium_reconstruction_weight_of_flux_loop_constraint</code></td>
+<td>-</td>
+<td>Weight assigned to flux loop measurement in reconstruction cost function.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>equilibrium_reconstruction_weight_of_poloidal_magnetic_field_probe_constraint</code></td>
+<td>-</td>
+<td>Weight assigned to poloidal field probe measurement in reconstruction cost function.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>etendue_of_soft_xray_detector</code></td>
+<td>m^2.sr</td>
+<td>Geometric extent (étendue) of soft X-ray detector optical system.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>f_multiplied_by_poloidal_flux_derivative_of_f</code></td>
+<td>T.m</td>
+<td>Radial profile of F function multiplied by derivative of F with respect to poloidal flux.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>fit_chi_squared_of_electron_temperature</code></td>
+<td>-</td>
+<td>Chi-squared goodness-of-fit metric for electron temperature profile fitting.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>fit_reconstructed_electron_temperature</code></td>
+<td>eV</td>
+<td>Electron temperature value reconstructed from fitting procedure.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>fit_weight_of_electron_temperature_measurement</code></td>
+<td>-</td>
+<td>Statistical weight assigned to measured electron temperature values in profile fitting.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_area</code></td>
+<td>m^2</td>
+<td>Radial profile of flux surface area.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_area_derivative_with_respect_to_poloidal_flux</code></td>
+<td>Wb^-1.m^2</td>
+<td>Derivative of flux surface cross-sectional area with respect to poloidal flux.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_area_derivative_with_respect_to_toroidal_flux_coordinate</code></td>
+<td>m</td>
+<td>Derivative of flux surface cross-sectional area with respect to toroidal flux coordinate.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_elongation</code></td>
+<td>-</td>
+<td>Radial profile of flux surface averaged elongation.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_inverse_major_radius</code></td>
+<td>m^-1</td>
+<td>Flux surface average of inverse major radius.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_inverse_squared_magnetic_field_strength</code></td>
+<td>T^-2</td>
+<td>Flux surface average of inverse squared magnetic field strength.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_lower_triangularity</code></td>
+<td>-</td>
+<td>Radial profile of flux surface averaged lower triangularity.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_magnetic_field_strength</code></td>
+<td>T</td>
+<td>Flux surface averaged magnetic field strength (obsolescent).</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_major_radius</code></td>
+<td>m</td>
+<td>Radial profile of flux surface averaged major radius.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_parallel_adiabatic_electron_current_density</code></td>
+<td>A.m^-2</td>
+<td>Radial profile of parallel adiabatic electron current density.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_parallel_bootstrap_current_density</code></td>
+<td>A.m^-2</td>
+<td>Flux surface averaged parallel bootstrap current density.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_parallel_current_density</code></td>
+<td>A.m^-2</td>
+<td>Flux surface averaged parallel plasma current density.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_parallel_diamagnetic_current_density</code></td>
+<td>A.m^-2</td>
+<td>Radial profile of parallel diamagnetic current density.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_parallel_ohmic_current_density</code></td>
+<td>A.m^-2</td>
+<td>Radial profile of parallel Ohmic current density.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_squared_magnetic_field_strength</code></td>
+<td>T^2</td>
+<td>Flux surface average of squared magnetic field strength.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_squared_toroidal_flux_coordinate_gradient_magnitude</code></td>
+<td>-</td>
+<td>Flux surface average of squared gradient magnitude of toroidal flux coordinate.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_squared_toroidal_flux_coordinate_gradient_magnitude_divided_by_squared_magnetic_field_strength</code></td>
+<td>T^-2</td>
+<td>Flux surface average of squared gradient magnitude divided by squared field strength.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_squared_toroidal_flux_coordinate_gradient_magnitude_divided_by_squared_major_radius</code></td>
+<td>m^-2</td>
+<td>Flux surface average of squared gradient magnitude divided by squared major radius.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_toroidal_current_density</code></td>
+<td>A.m^-2</td>
+<td>Flux surface averaged toroidal plasma current density.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_toroidal_flux_coordinate_gradient_magnitude</code></td>
+<td>-</td>
+<td>Flux surface average of gradient magnitude of toroidal flux coordinate.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_triangularity</code></td>
+<td>-</td>
+<td>Radial profile of flux surface averaged triangularity.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_averaged_upper_triangularity</code></td>
+<td>-</td>
+<td>Radial profile of flux surface averaged upper triangularity.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_surface_area</code></td>
+<td>m^2</td>
+<td>Radial profile of toroidal surface area of flux surfaces.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_volume</code></td>
+<td>m^3</td>
+<td>Radial profile of flux surface volume.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_volume_derivative_with_respect_to_poloidal_flux</code></td>
+<td>Wb^-1.m^3</td>
+<td>Derivative of flux surface volume with respect to poloidal flux.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>flux_surface_volume_derivative_with_respect_to_toroidal_flux_coordinate</code></td>
+<td>m^2</td>
+<td>Derivative of flux surface volume with respect to toroidal flux coordinate.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>forward_power_from_ion_cyclotron_heating_antenna</code></td>
+<td>W</td>
+<td>Forward RF power arriving at the back of an ion cyclotron heating antenna module.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>frequency_of_ion_cyclotron_heating_antenna</code></td>
+<td>Hz</td>
+<td>Operating frequency of ion cyclotron heating antenna system.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>gas_flow_rate_from_gas_injection_valve</code></td>
+<td>Pa.m^3.s^-1</td>
+<td>Gas flow rate measured at the exit of a gas injection valve.</td>
+<td><a href="../tags/fueling/">Fueling</a></td>
+</tr>
+<tr>
+<td><code>geometric_minor_radius</code></td>
+<td>m</td>
+<td>Radial profile of geometric minor radius of flux surfaces.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>hot_neutral_fraction_of_isotope</code></td>
+<td>-</td>
+<td>Fraction of hot neutrals relative to total neutrals for a specific isotope.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>hot_neutral_temperature_of_isotope</code></td>
+<td>eV</td>
+<td>Temperature characterizing the hot neutral population for a specific isotope.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>intensity_of_spectral_line_from_spectrometer</code></td>
+<td>s^-1</td>
+<td>Uncalibrated intensity of an identified spectral line integrated over its wavelength range.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>intensity_spectrum_from_spectrometer</code></td>
+<td>s^-1</td>
+<td>Uncalibrated intensity spectrum measured by spectrometer detector.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>internal_inductance</code></td>
+<td>-</td>
+<td>Internal inductance of plasma current distribution.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>length_of_poloidal_magnetic_field_probe</code></td>
+<td>m</td>
+<td>Length of sensing coil along sensor normal axis of poloidal field probe.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>length_of_toroidal_magnetic_field_probe</code></td>
+<td>m</td>
+<td>Length of sensing coil along sensor normal axis of toroidal field probe.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>lower_bound_of_soft_xray_detector_energy_band</code></td>
+<td>eV</td>
+<td>Lower energy threshold of soft X-ray detector sensitive energy band.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>lower_elongation_of_plasma_boundary</code></td>
+<td>-</td>
+<td>Lower half elongation of plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>lower_triangularity_of_plasma_boundary</code></td>
+<td>-</td>
+<td>Lower triangularity of plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>magnetic_field_from_poloidal_magnetic_field_probe</code></td>
+<td>T</td>
+<td>Magnetic field component measured by poloidal field probe along sensor normal axis.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>magnetic_field_from_toroidal_magnetic_field_probe</code></td>
+<td>T</td>
+<td>Magnetic field component measured by toroidal field probe along sensor normal axis.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>magnetic_field_line_length_for_single_poloidal_transit</code></td>
+<td>m</td>
+<td>Radial profile of magnetic field line length for single poloidal transit.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>magnetic_shear</code></td>
+<td>-</td>
+<td>Radial profile of magnetic shear.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>maximum_magnetic_field_strength_on_flux_surface</code></td>
+<td>T</td>
+<td>Maximum magnetic field strength on flux surface (obsolescent).</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>measured_faraday_rotation_angle</code></td>
+<td>rad</td>
+<td>Measured Faraday rotation angle used in equilibrium reconstruction.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>measured_poloidal_component_of_magnetic_field_from_poloidal_magnetic_field_probe</code></td>
+<td>T</td>
+<td>Measured poloidal magnetic field from probe used in equilibrium reconstruction.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>measured_poloidal_magnetic_flux_from_flux_loop</code></td>
+<td>Wb</td>
+<td>Measured poloidal magnetic flux from flux loop used in reconstruction.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>minimum_magnetic_field_strength_on_flux_surface</code></td>
+<td>T</td>
+<td>Minimum magnetic field strength on flux surface (obsolescent).</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>minimum_safety_factor</code></td>
+<td>-</td>
+<td>Minimum value of safety factor.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>minor_radius_of_plasma_boundary</code></td>
+<td>m</td>
+<td>Minor radius of plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>neutral_density_ratio_of_isotope</code></td>
+<td>-</td>
+<td>Ratio of neutral density of an isotope to the sum of all other measured isotope neutral densities.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>normalized_poloidal_flux_at_plasma_boundary</code></td>
+<td>-</td>
+<td>Normalized poloidal flux value defining plasma boundary location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>normalized_poloidal_flux_coordinate</code></td>
+<td>-</td>
+<td>Normalized poloidal flux coordinate for radial position in flux coordinates.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>normalized_toroidal_beta</code></td>
+<td>-</td>
+<td>Normalized toroidal beta parameter.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>normalized_toroidal_flux_coordinate</code></td>
+<td>-</td>
+<td>Radial profile of normalized toroidal flux coordinate.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>normalized_toroidal_flux_coordinate_at_minimum_safety_factor</code></td>
+<td>-</td>
+<td>Normalized toroidal flux at minimum safety factor location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>nuclear_charge_number_of_isotope</code></td>
+<td>e</td>
+<td>Nuclear charge number (Z) of an element in elementary charge units.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>number_of_atoms_of_element_in_molecule</code></td>
+<td>-</td>
+<td>Number of atoms of a specific element present in a molecule.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>number_of_turns_of_passive_loop</code></td>
+<td>-</td>
+<td>Effective number of turns in passive loop element for magnetic field calculations.</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>number_of_turns_of_poloidal_field_coil</code></td>
+<td>-</td>
+<td>Number of effective turns in a poloidal field coil element for calculating magnetic fields.</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>number_of_turns_of_poloidal_magnetic_field_probe</code></td>
+<td>-</td>
+<td>Number of turns in the sensing coil of poloidal field probe.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>number_of_turns_of_toroidal_magnetic_field_probe</code></td>
+<td>-</td>
+<td>Number of turns in the sensing coil of toroidal field probe.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>path_length_variation_from_interferometer_beam</code></td>
+<td>m</td>
+<td>Optical path length variation due to plasma refractive index changes.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>phase_from_interferometer_beam</code></td>
+<td>rad</td>
+<td>Phase shift measured by interferometer, corrected for fringe jumps.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>phase_of_current_from_antenna_strap</code></td>
+<td>rad</td>
+<td>Phase angle of current flowing through individual antenna strap.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>phase_of_forward_power_from_ion_cyclotron_heating_antenna</code></td>
+<td>rad</td>
+<td>Phase angle of forward RF power relative to first module in antenna array.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>phase_of_reflected_power_from_ion_cyclotron_heating_antenna</code></td>
+<td>rad</td>
+<td>Phase angle of reflected RF power relative to forward power of the same module.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>phase_to_electron_line_integrated_density_conversion_factor_of_interferometer_beam</code></td>
+<td>m^-2.rad^-1</td>
+<td>Conversion factor from measured phase to line-integrated electron density.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>plasma_current</code></td>
+<td>A</td>
+<td>Total toroidal plasma current.</td>
+<td><a href="../tags/fundamental/">Fundamental</a></td>
+</tr>
+<tr>
+<td><code>plasma_pressure</code></td>
+<td>Pa</td>
+<td>Radial profile of plasma pressure.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>plasma_thermal_energy</code></td>
+<td>J</td>
+<td>Total thermal energy of confined plasma.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>plasma_volume</code></td>
+<td>m^3</td>
+<td>Total volume enclosed by plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_angle_of_sensor_normal_of_poloidal_magnetic_field_probe</code></td>
+<td>rad</td>
+<td>Poloidal angle of sensor normal axis orientation of poloidal field probe.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>poloidal_angle_of_sensor_normal_of_toroidal_magnetic_field_probe</code></td>
+<td>rad</td>
+<td>Poloidal angle of sensor normal axis orientation of toroidal field probe.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>poloidal_beta</code></td>
+<td>-</td>
+<td>Poloidal beta parameter for plasma pressure.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_circumference_of_plasma_boundary</code></td>
+<td>m</td>
+<td>Poloidal circumference of plasma boundary at outboard midplane.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_component_of_magnetic_field_at_outboard_midplane</code></td>
+<td>T</td>
+<td>Radial profile of poloidal magnetic field strength at outboard midplane.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_flux</code></td>
+<td>Wb</td>
+<td>Radial profile of poloidal magnetic flux.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_flux_at_magnetic_axis</code></td>
+<td>Wb</td>
+<td>Poloidal flux at magnetic axis location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_flux_at_plasma_boundary</code></td>
+<td>Wb</td>
+<td>Poloidal magnetic flux at plasma boundary surface.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_flux_derivative_with_respect_to_toroidal_flux_coordinate</code></td>
+<td>Wb.m^-1</td>
+<td>Radial derivative of poloidal flux with respect to toroidal flux coordinate.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_magnetic_flux</code></td>
+<td>Wb</td>
+<td>Poloidal magnetic flux enclosed by flux surface in tokamak.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_magnetic_flux_at_magnetic_axis</code></td>
+<td>Wb</td>
+<td>Value of poloidal magnetic flux at the magnetic axis.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_magnetic_flux_at_plasma_boundary</code></td>
+<td>Wb</td>
+<td>Value of poloidal magnetic flux at the plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>poloidal_magnetic_flux_from_flux_loop</code></td>
+<td>Wb</td>
+<td>Poloidal magnetic flux measured by flux loop diagnostic.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>position_of_active_limiter_point</code></td>
+<td>m</td>
+<td>Position vector of active limiter contact point.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>position_of_antenna_strap_outline</code></td>
+<td>m</td>
+<td>Position vector defining antenna strap outline geometry in cylindrical coordinates.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>position_of_first_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Position vector of the first point defining interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>position_of_flux_loop</code></td>
+<td>m</td>
+<td>Position vector of flux loop contour point in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>position_of_geometric_axis_of_plasma_boundary</code></td>
+<td>m</td>
+<td>Position of geometric center of plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>position_of_line_of_sight_first_point_from_spectrometer</code></td>
+<td>m</td>
+<td>3D position vector of the first point defining the spectrometer line of sight.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>position_of_line_of_sight_second_point_from_spectrometer</code></td>
+<td>m</td>
+<td>3D position vector of the second point defining the spectrometer line of sight.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>position_of_magnetic_axis</code></td>
+<td>m</td>
+<td>Position vector of magnetic axis.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>position_of_plasma_boundary_outline</code></td>
+<td>m</td>
+<td>Position vector contour defining plasma boundary shape.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>position_of_poloidal_field_coil</code></td>
+<td>m</td>
+<td>Position vector of poloidal field coil geometric center in cylindrical coordinates.</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>position_of_poloidal_magnetic_field_probe</code></td>
+<td>m</td>
+<td>Position vector of poloidal field probe center in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>position_of_primary_strike_point</code></td>
+<td>m</td>
+<td>Position vector of primary strike point.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>position_of_primary_x_point</code></td>
+<td>m</td>
+<td>Position vector of primary X-point.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>position_of_second_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Position vector of the second point defining interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>position_of_soft_xray_detector_line_of_sight_first_point</code></td>
+<td>m</td>
+<td>Three-dimensional position vector of first point defining soft X-ray detector line of sight.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>position_of_soft_xray_detector_line_of_sight_second_point</code></td>
+<td>m</td>
+<td>Three-dimensional position vector of second point defining soft X-ray detector line of sight.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>position_of_third_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Position vector of the third point defining reflected interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>position_of_toroidal_magnetic_field_probe</code></td>
+<td>m</td>
+<td>Position vector of toroidal field probe center in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>power_from_soft_xray_detector</code></td>
+<td>W</td>
+<td>Total radiant power received by soft X-ray detector.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>power_launched_from_ion_cyclotron_heating_antenna</code></td>
+<td>W</td>
+<td>Total RF power launched into the vacuum vessel from ion cyclotron heating antenna.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>pressure_amplitude_from_ion_cyclotron_heating_antenna</code></td>
+<td>Pa</td>
+<td>Amplitude of pressure measurement at ion cyclotron heating antenna module.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>radial_position_derivative_of_geometric_axis</code></td>
+<td>-</td>
+<td>Radial profile of radial derivative of geometric major radius.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_active_limiter_point</code></td>
+<td>m</td>
+<td>Major radius of active limiter contact point.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_antenna_strap_outline</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of antenna strap outline points in cylindrical coordinates.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_first_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Major radius of the first point defining interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_flux_loop</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of flux loop contour point in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_geometric_axis</code></td>
+<td>m</td>
+<td>Radial profile of geometric major radius of flux surfaces.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_geometric_axis_of_plasma_boundary</code></td>
+<td>m</td>
+<td>Major radius of geometric center of plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_inboard_point_at_outboard_midplane_height</code></td>
+<td>m</td>
+<td>Radial coordinate of inboard flux surface point at outboard midplane height.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_line_of_sight_first_point_from_spectrometer</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of the first point defining the spectrometer line of sight.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_line_of_sight_second_point_from_spectrometer</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of the second point defining the spectrometer line of sight.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_magnetic_axis</code></td>
+<td>m</td>
+<td>Major radius of magnetic axis location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_outboard_point_at_midplane</code></td>
+<td>m</td>
+<td>Radial coordinate of outboard flux surface point at midplane.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_plasma_boundary_outline</code></td>
+<td>m</td>
+<td>Major radius points defining plasma boundary contour.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_poloidal_field_coil</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of poloidal field coil geometric center in cylindrical coordinates.</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_poloidal_magnetic_field_probe</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of poloidal field probe center in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_primary_strike_point</code></td>
+<td>m</td>
+<td>Major radius of primary strike point location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_primary_x_point</code></td>
+<td>m</td>
+<td>Major radius of primary X-point location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_second_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Major radius of the second point defining interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_soft_xray_detector_line_of_sight_first_point</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of first point defining soft X-ray detector line of sight.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_soft_xray_detector_line_of_sight_second_point</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of second point defining soft X-ray detector line of sight.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_third_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Major radius of the third point defining reflected interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>radial_position_of_toroidal_magnetic_field_probe</code></td>
+<td>m</td>
+<td>Major radius (R coordinate) of toroidal field probe center in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>radial_shafranov_shift</code></td>
+<td>m</td>
+<td>Radial profile of Shafranov radial shift of flux surfaces.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>radial_width_of_poloidal_field_coil</code></td>
+<td>m</td>
+<td>Horizontal full width (radial extent) of poloidal field coil rectangular cross-section.</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>radiance_of_spectral_line_from_spectrometer</code></td>
+<td>W.m^-2.sr^-1</td>
+<td>Calibrated radiance of an identified spectral line integrated over its wavelength range.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>reconstructed_faraday_rotation_angle</code></td>
+<td>rad</td>
+<td>Reconstructed Faraday angle from equilibrium solution along diagnostic chord.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>reconstructed_poloidal_component_of_magnetic_field_from_poloidal_magnetic_field_probe</code></td>
+<td>T</td>
+<td>Reconstructed poloidal field from equilibrium solution at probe location.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>reconstructed_poloidal_magnetic_flux_from_flux_loop</code></td>
+<td>Wb</td>
+<td>Reconstructed poloidal flux from equilibrium solution through flux loop.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>reference_major_radius_of_vacuum_toroidal_magnetic_field</code></td>
+<td>m</td>
+<td>Reference major radius where vacuum toroidal magnetic field is specified.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>reference_radial_position_of_vacuum_toroidal_magnetic_field</code></td>
+<td>m</td>
+<td>Reference major radius where vacuum toroidal magnetic field is specified.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>reflected_power_from_ion_cyclotron_heating_antenna</code></td>
+<td>W</td>
+<td>Reflected RF power from an ion cyclotron heating antenna module.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>safety_factor</code></td>
+<td>-</td>
+<td>Radial profile of safety factor.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>safety_factor_at_95_percent_flux_surface</code></td>
+<td>-</td>
+<td>Safety factor at 95% normalized flux surface.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>safety_factor_at_magnetic_axis</code></td>
+<td>-</td>
+<td>Safety factor at magnetic axis.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>signal_to_noise_ratio_from_spectrometer</code></td>
+<td>dB</td>
+<td>Signal-to-noise ratio for spectroscopic measurements expressed in decibels.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>spectral_radiance_from_spectrometer</code></td>
+<td>W.m^-2.m^-1.sr^-1</td>
+<td>Calibrated spectral radiance (radiance per unit wavelength) measured by spectrometer.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>surface_area_of_plasma_boundary</code></td>
+<td>m^2</td>
+<td>Surface area of toroidal plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>thermal_electron_density</code></td>
+<td>m^-3</td>
+<td>Electron number density of thermal (Maxwellian) population only.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>thermal_electron_pressure</code></td>
+<td>Pa</td>
+<td>Thermal electron pressure from random thermal motion only.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>time</code></td>
+<td>s</td>
+<td>Time coordinate for time-dependent measurements.</td>
+<td><a href="../tags/fundamental/">Fundamental</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_antenna_strap_outline</code></td>
+<td>rad</td>
+<td>Toroidal angle (φ coordinate) of antenna strap outline points in cylindrical coordinates.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_first_point_of_interferometer_beam</code></td>
+<td>rad</td>
+<td>Toroidal angle of the first point defining interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_line_of_sight_first_point_from_spectrometer</code></td>
+<td>rad</td>
+<td>Toroidal angle (φ coordinate) of the first point defining the spectrometer line of sight.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_line_of_sight_second_point_from_spectrometer</code></td>
+<td>rad</td>
+<td>Toroidal angle (φ coordinate) of the second point defining the spectrometer line of sight.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_poloidal_magnetic_field_probe</code></td>
+<td>rad</td>
+<td>Toroidal angle (φ coordinate) of poloidal field probe center in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_second_point_of_interferometer_beam</code></td>
+<td>rad</td>
+<td>Toroidal angle of the second point defining interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_sensor_normal_of_poloidal_magnetic_field_probe</code></td>
+<td>rad</td>
+<td>Toroidal angle of sensor normal axis projection of poloidal field probe.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_sensor_normal_of_toroidal_magnetic_field_probe</code></td>
+<td>rad</td>
+<td>Toroidal angle of sensor normal axis projection of toroidal field probe.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_soft_xray_detector_line_of_sight_first_point</code></td>
+<td>rad</td>
+<td>Toroidal angle (φ coordinate) of first point defining soft X-ray detector line of sight.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_soft_xray_detector_line_of_sight_second_point</code></td>
+<td>rad</td>
+<td>Toroidal angle (φ coordinate) of second point defining soft X-ray detector line of sight.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_third_point_of_interferometer_beam</code></td>
+<td>rad</td>
+<td>Toroidal angle of the third point defining reflected interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>toroidal_angle_of_toroidal_magnetic_field_probe</code></td>
+<td>rad</td>
+<td>Toroidal angle (φ coordinate) of toroidal field probe center in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>toroidal_beta</code></td>
+<td>-</td>
+<td>Toroidal beta parameter for plasma pressure.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>toroidal_component_of_magnetic_field_at_magnetic_axis</code></td>
+<td>T</td>
+<td>Toroidal magnetic field component at magnetic axis.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>toroidal_component_of_vacuum_magnetic_field_at_reference_position</code></td>
+<td>T</td>
+<td>Vacuum toroidal magnetic field component at reference position.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>toroidal_flux</code></td>
+<td>Wb</td>
+<td>Radial profile of toroidal magnetic flux.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>toroidal_flux_coordinate</code></td>
+<td>m</td>
+<td>Radial profile of toroidal flux coordinate.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>toroidal_flux_derivative</code></td>
+<td>Wb</td>
+<td>Radial profile of radial derivative of toroidal flux.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>toroidal_flux_derivative_with_respect_to_poloidal_flux</code></td>
+<td>-</td>
+<td>Radial profile of toroidal flux derivative with respect to poloidal flux.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>toroidal_width_of_antenna_strap</code></td>
+<td>m</td>
+<td>Width of antenna strap in the toroidal direction.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>trapped_particle_fraction</code></td>
+<td>-</td>
+<td>Radial profile of trapped particle fraction.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>triangularity_of_plasma_boundary</code></td>
+<td>-</td>
+<td>Triangularity of plasma boundary cross-section.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>upper_bound_of_soft_xray_detector_energy_band</code></td>
+<td>eV</td>
+<td>Upper energy threshold of soft X-ray detector sensitive energy band.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>upper_elongation_of_plasma_boundary</code></td>
+<td>-</td>
+<td>Upper half elongation of plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>upper_triangularity_of_plasma_boundary</code></td>
+<td>-</td>
+<td>Upper triangularity of plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>vacuum_toroidal_magnetic_field_at_reference_major_radius</code></td>
+<td>T</td>
+<td>Vacuum toroidal magnetic field magnitude at reference major radius.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>vertical_height_of_poloidal_field_coil</code></td>
+<td>m</td>
+<td>Vertical full height of poloidal field coil rectangular cross-section.</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_active_limiter_point</code></td>
+<td>m</td>
+<td>Height of active limiter contact point.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_antenna_strap_outline</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of antenna strap outline points in cylindrical coordinates.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_first_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of the first point defining interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_flux_loop</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of flux loop contour point in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_geometric_axis_of_plasma_boundary</code></td>
+<td>m</td>
+<td>Height of geometric center of plasma boundary.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_line_of_sight_first_point_from_spectrometer</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of the first point defining the spectrometer line of sight.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_line_of_sight_second_point_from_spectrometer</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of the second point defining the spectrometer line of sight.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_magnetic_axis</code></td>
+<td>m</td>
+<td>Height of magnetic axis location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_plasma_boundary_outline</code></td>
+<td>m</td>
+<td>Height coordinates defining plasma boundary contour.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_poloidal_field_coil</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of poloidal field coil geometric center in cylindrical coordinates.</td>
+<td><a href="../tags/coils-and-control/">Coils And Control</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_poloidal_magnetic_field_probe</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of poloidal field probe center in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_primary_strike_point</code></td>
+<td>m</td>
+<td>Height of primary strike point location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_primary_x_point</code></td>
+<td>m</td>
+<td>Height of primary X-point location.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_second_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of the second point defining interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_soft_xray_detector_line_of_sight_first_point</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of first point defining soft X-ray detector line of sight.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_soft_xray_detector_line_of_sight_second_point</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of second point defining soft X-ray detector line of sight.</td>
+<td><a href="../tags/radiation-diagnostics/">Radiation Diagnostics</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_third_point_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of the third point defining reflected interferometer line of sight.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+<tr>
+<td><code>vertical_position_of_toroidal_magnetic_field_probe</code></td>
+<td>m</td>
+<td>Height (Z coordinate) of toroidal field probe center in cylindrical coordinates.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>voltage_amplitude_from_ion_cyclotron_heating_antenna</code></td>
+<td>V</td>
+<td>Amplitude of voltage signal measured at ion cyclotron heating antenna module.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>voltage_from_poloidal_magnetic_field_probe</code></td>
+<td>V</td>
+<td>Voltage induced across terminals of poloidal field probe coil.</td>
+<td><a href="../tags/magnetics/">Magnetics</a></td>
+</tr>
+<tr>
+<td><code>voltage_phase_from_ion_cyclotron_heating_antenna</code></td>
+<td>rad</td>
+<td>Phase angle of voltage signal measured at ion cyclotron heating antenna module.</td>
+<td><a href="../tags/ic-heating/">Ic Heating</a></td>
+</tr>
+<tr>
+<td><code>volume_averaged_effective_charge_due_to_ohmic</code></td>
+<td>-</td>
+<td>Volume-averaged effective charge estimated from ohmic flux consumption.</td>
+<td><a href="../tags/core-physics/">Core Physics</a></td>
+</tr>
+<tr>
+<td><code>volume_enclosed_by_flux_surface</code></td>
+<td>m^3</td>
+<td>Volume enclosed inside a toroidal magnetic flux surface.</td>
+<td><a href="../tags/equilibrium/">Equilibrium</a></td>
+</tr>
+<tr>
+<td><code>wavelength_from_spectrometer</code></td>
+<td>m</td>
+<td>Wavelength coordinate for spectroscopic measurements in the visible light range.</td>
+<td><a href="../tags/spectroscopy/">Spectroscopy</a></td>
+</tr>
+<tr>
+<td><code>wavelength_of_interferometer_beam</code></td>
+<td>m</td>
+<td>Wavelength of laser light used for interferometry measurement.</td>
+<td><a href="../tags/interferometry/">Interferometry</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

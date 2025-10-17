@@ -73,7 +73,7 @@ def define_env(env):
         return dict(tags_groups)
     
     @env.macro
-    def standard_names_table(items, show_category=False):
+    def standard_names_table(items, show_category=False, show_full_description=False):
         """Generate a markdown table for standard names"""
         if not items:
             return "No standard names found."
@@ -94,15 +94,15 @@ def define_env(env):
             unit = item.get('unit', '-')
             description = item.get('description', 'No description')
             
-            # Escape and truncate description
+            # Escape special characters but don't truncate if showing full description
             description = description.replace('|', '\\|').replace('\n', ' ')
-            if len(description) > 80:
+            if not show_full_description and len(description) > 80:
                 description = description[:77] + "..."
             
-            # Create link to individual page
-            name_link = f"[`{name}`](names/{name}.md)"
+            # Just show the name as code, no link needed
+            name_display = f"`{name}`"
             
-            row = [name_link, unit, description]
+            row = [name_display, unit, description]
             
             if show_category:
                 category = item.get('_category', 'Unknown')
@@ -137,6 +137,44 @@ def define_env(env):
             formatted.append(f"`{tag}`")
         
         return ", ".join(formatted)
+    
+    @env.macro
+    def standard_names_detailed_list(items):
+        """Generate detailed expandable list for standard names"""
+        if not items:
+            return "No standard names found."
+        
+        result = ""
+        sorted_items = sorted(items, key=lambda x: x.get('name', ''))
+        
+        for item in sorted_items:
+            name = item.get('name', 'Unknown')
+            unit = item.get('unit', 'Not specified')
+            description = item.get('description', 'No description')
+            documentation = item.get('documentation', 'No detailed documentation available.')
+            status = item.get('status', 'Unknown')
+            tags = item.get('tags', [])
+            kind = item.get('kind', 'Not specified')
+            
+            result += f"""
+## {name}
+
+**Unit:** {unit} | **Kind:** {kind} | **Status:** {status} | **Tags:** {format_tags(tags)}
+
+{description}
+
+<details>
+<summary>Detailed Documentation</summary>
+
+{documentation}
+
+</details>
+
+---
+
+"""
+        
+        return result
     
     @env.macro
     def category_stats():
