@@ -152,7 +152,8 @@ def define_env(env):
         result = ""
         categories = get_categories()
 
-        for category, items in categories.items():
+        # Sort categories alphabetically
+        for category, items in sorted(categories.items()):
             category_name = category.replace("-", " ").title()
             result += f"## **{category_name}** {{#{category}}}\n\n"
             result += "---\n\n"
@@ -275,7 +276,8 @@ def define_env(env):
         tags = get_tags()
         result = ""
 
-        for category, items in tags.items():
+        # Sort categories alphabetically
+        for category, items in sorted(tags.items()):
             category_name = category.replace("-", " ").title()
             # MkDocs generates anchors as lowercase with hyphens
             category_anchor = category_name.lower().replace(" ", "-")
