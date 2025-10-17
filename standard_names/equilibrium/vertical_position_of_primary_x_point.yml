@@ -1,0 +1,13 @@
+name: vertical_position_of_primary_x_point
+description: Height of primary X-point location.
+documentation: 'Vertical coordinate (height $Z$) of the primary X-point. Together
+  with radial position defines the $(R, Z)$ location where the separatrix branches
+  meet and $\mathbf{B}_{pol} = 0$. X-point height determines strike point angles and
+  divertor closure. Typical locations: below midplane for lower single-null, symmetric
+  about midplane for double-null.'
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: scalar

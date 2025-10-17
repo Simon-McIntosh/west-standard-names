@@ -1,0 +1,14 @@
+name: radial_position_of_inboard_point_at_outboard_midplane_height
+description: Radial coordinate of inboard flux surface point at outboard midplane
+  height.
+documentation: Major radius $R_{inboard}(\rho, Z=Z_{mag})$ of inboard intersection
+  of flux surface with midplane. Defines inner limit of flux surface at magnetic axis
+  height. Used for geometric profile construction and flux surface shape characterization.
+  Shafranov shift moves inboard point outward with increasing pressure.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+- spatial-profile
+kind: scalar

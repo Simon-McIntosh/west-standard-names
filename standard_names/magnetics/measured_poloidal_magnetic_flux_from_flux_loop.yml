@@ -1,0 +1,14 @@
+name: measured_poloidal_magnetic_flux_from_flux_loop
+description: Measured poloidal magnetic flux from flux loop used in reconstruction.
+documentation: Poloidal magnetic flux $\psi$ measured by flux loop diagnostic, used
+  as constraint in equilibrium reconstruction. Flux defined as $\psi = \int \mathbf{B}_p
+  \cdot d\mathbf{A}$ over loop area. **Sign convention:** Positive when normal to
+  loop points downward (negative $Z$ direction). Fundamental measurement for equilibrium
+  reconstruction and plasma current estimation.
+unit: Wb
+status: draft
+tags:
+- magnetics
+- equilibrium-reconstruction
+- measured
+kind: scalar

@@ -1,0 +1,12 @@
+name: poloidal_beta
+description: Poloidal beta parameter for plasma pressure.
+documentation: 'Poloidal beta $\beta_p$ measuring ratio of plasma pressure to poloidal
+  magnetic field pressure. Defined as $\beta_p = \frac{4}{R_0 \mu_0 I_p^2} \int p
+  \, dV$ where $p$ is plasma pressure, $I_p$ is plasma current, and $R_0$ is major
+  radius. Related to internal inductance and MHD equilibrium properties. Typical values:
+  0.5-2.0 in tokamaks.'
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

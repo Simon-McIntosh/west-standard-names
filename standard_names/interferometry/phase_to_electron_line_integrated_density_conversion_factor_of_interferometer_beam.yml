@@ -1,0 +1,17 @@
+name: phase_to_electron_line_integrated_density_conversion_factor_of_interferometer_beam
+description: Conversion factor from measured phase to line-integrated electron density.
+documentation: "Calibration factor converting interferometric phase measurements (in\
+  \ radians) to line-integrated electron density (in m\u207B\xB2). Derived from the\
+  \ dispersion relation for electromagnetic wave propagation through plasma:\n\n$$n_e^{line}\
+  \ = C \\cdot \\Delta \\phi$$\n\nwhere $C = \\frac{2}{r_e \\lambda}$ is this conversion\
+  \ factor, $r_e = 2.818 \\times 10^{-15}$ m is the classical electron radius, and\
+  \ $\\lambda$ is the wavelength. For example, at \u03BB = 10.6 \u03BCm (CO\u2082\
+  \ laser), $C \\approx 6.7 \\times 10^{19}$ m\u207B\xB2 rad\u207B\xB9. This factor\
+  \ is wavelength-specific and must be applied separately for each interferometer\
+  \ channel or wavelength."
+unit: m^-2.rad^-1
+status: draft
+tags:
+- interferometry
+- calibrated
+kind: scalar

@@ -1,0 +1,11 @@
+name: normalized_toroidal_flux_coordinate_at_minimum_safety_factor
+description: Normalized toroidal flux at minimum safety factor location.
+documentation: 'Normalized toroidal flux coordinate $\rho_{tor,norm}$ at the radial
+  location where safety factor reaches its minimum value. For monotonic q-profiles:
+  $\rho_{q,min} = 0$ (at axis). For reversed shear: $0 < \rho_{q,min} < 1$ indicating
+  off-axis minimum. Used to characterize internal transport barrier location.'
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+kind: scalar

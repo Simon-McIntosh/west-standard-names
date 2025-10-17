@@ -1,0 +1,12 @@
+name: internal_inductance
+description: Internal inductance of plasma current distribution.
+documentation: 'Normalized internal inductance $l_i(3)$ characterizing plasma current
+  profile peaking. Defined by integral of current density profile. Larger $l_i$ indicates
+  more peaked current (higher core current density). Affects MHD stability, confinement,
+  and current diffusion timescales. Typical values: 0.5-1.5, with $l_i \sim 0.8$ for
+  steady-state profiles.'
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

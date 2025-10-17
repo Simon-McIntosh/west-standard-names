@@ -1,0 +1,15 @@
+name: neutral_density_ratio_of_isotope
+description: Ratio of neutral density of an isotope to the sum of all other measured
+  isotope neutral densities.
+documentation: 'Ratio of the neutral density of a specific isotope to the summed neutral
+  densities of all other isotopes in the measurement set, defined as $n_i / \sum_{j
+  \neq i} n_j$ where $n_i$ is the neutral density of isotope $i$. Dimensionless quantity
+  derived from spectral line intensity ratios of isotope-specific transitions. Used
+  for fuel isotope mix analysis in deuterium-tritium plasmas and wall recycling studies.
+  Typical values: 0.1-10 depending on fueling mix and recycling sources.'
+status: draft
+tags:
+- spectroscopy
+- measured
+- time-dependent
+kind: scalar

@@ -1,0 +1,24 @@
+name: vacuum_toroidal_magnetic_field_at_reference_major_radius
+description: Vacuum toroidal magnetic field magnitude at reference major radius.
+documentation: 'Vacuum toroidal magnetic field $B_0$ at the reference major radius
+  $R_0$. This is the toroidal field that would exist in the absence of plasma.
+
+
+  Sign convention: Positive $B_0$ corresponds to counter-clockwise toroidal field
+  direction when viewed from above the tokamak.
+
+
+  The product $R_0 B_0$ is approximately conserved along toroidal field lines in vacuum:
+
+
+  $$B_{tor}(R) \approx \frac{B_0 R_0}{R}$$
+
+
+  This quantity must be consistent with the toroidal field coil current and the field
+  mapping in the TF coil system. Typical values: 1-10 T for tokamaks.'
+unit: T
+status: draft
+tags:
+- equilibrium
+- time-dependent
+kind: scalar

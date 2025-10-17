@@ -1,0 +1,12 @@
+name: flux_surface_averaged_squared_toroidal_flux_coordinate_gradient_magnitude
+description: Flux surface average of squared gradient magnitude of toroidal flux coordinate.
+documentation: Flux surface averaged geometric moment $\langle |\nabla \rho_{tor}|^2
+  \rangle$. Metric coefficient characterizing flux surface geometry. Used in transport
+  codes for calculating diffusion coefficients and coordinate transformations. Related
+  to Jacobian and flux surface shape.
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

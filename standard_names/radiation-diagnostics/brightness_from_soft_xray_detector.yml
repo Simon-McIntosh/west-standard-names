@@ -1,0 +1,18 @@
+name: brightness_from_soft_xray_detector
+description: Specific intensity (power per unit area per unit solid angle) measured
+  by soft X-ray detector.
+documentation: "Brightness (specific intensity) measured by the soft X-ray detector,\
+  \ defined as the power flux per unit solid angle per unit area: $B = P / (A \\Omega)$\
+  \ where $P$ is power, $A$ is detector area, and $\\Omega$ is solid angle. This is\
+  \ the \xE9tendue-normalized signal, obtained by dividing the measured power by the\
+  \ detector's \xE9tendue. Brightness is the fundamental radiometric quantity for\
+  \ tomographic reconstruction, as it is independent of the detector's geometric parameters.\
+  \ Units are W\xB7m\u207B\xB2\xB7sr\u207B\xB9. The brightness is related to plasma\
+  \ emissivity through line integration along the viewing chord."
+unit: W.m^-2.sr^-1
+status: draft
+tags:
+- radiation-diagnostics
+- measured
+- time-dependent
+kind: scalar

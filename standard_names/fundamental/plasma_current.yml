@@ -1,0 +1,20 @@
+name: plasma_current
+description: Total toroidal plasma current.
+documentation: "Total toroidal current $I_p$ flowing in the plasma, defined as the\
+  \ surface integral of toroidal current density:\n\n$$I_p = \\int \\mathbf{J}_{\\\
+  phi} \\cdot d\\mathbf{A}$$\n\nintegrated over a poloidal cross-section.\n\n**Sign\
+  \ convention:** Positive current is anti-clockwise when viewed from above (in the\
+  \ direction of increasing toroidal angle $\\phi$).\n\nThe plasma current is a fundamental\
+  \ parameter controlling plasma confinement, MHD stability, and current-driven effects.\
+  \ It is related to poloidal flux and magnetic field via Amp\xE8re's law. Measurements\
+  \ typically use Rogowski coils or are inferred from magnetic equilibrium reconstruction.\n\
+  \nTypical values: 0.1-15 MA in tokamaks depending on device size. Evolution of $I_p$\
+  \ determines resistive skin time, current diffusion, and operational scenarios."
+unit: A
+status: draft
+tags:
+- fundamental
+- global-quantity
+- measured
+- time-dependent
+kind: scalar

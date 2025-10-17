@@ -1,0 +1,24 @@
+name: electron_density
+description: Total electron number density including thermal and non-thermal populations.
+documentation: 'Electron number density $n_e$ representing the total concentration
+  of electrons per unit volume, including both thermal (Maxwellian) and non-thermal
+  (e.g., runaway, beam-injected) populations.
+
+
+  Electron density is measured by interferometry, Thomson scattering, reflectometry,
+  and other diagnostics. In tokamak core plasmas, typical values range from $10^{19}$
+  to $10^{21}$ m$^{-3}$.
+
+
+  The electron density determines plasma collisionality, refractivity for electromagnetic
+  waves, and appears in the plasma frequency:
+
+
+  $$\omega_{pe} = \sqrt{\frac{n_e e^2}{\epsilon_0 m_e}}$$'
+unit: m^-3
+status: draft
+tags:
+- core-physics
+- measured
+- spatial-profile
+kind: scalar

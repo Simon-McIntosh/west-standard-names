@@ -1,0 +1,12 @@
+name: flux_surface_averaged_upper_triangularity
+description: Radial profile of flux surface averaged upper triangularity.
+documentation: Flux surface averaged upper triangularity $\langle \delta_{upper} \rangle$
+  with respect to magnetic axis. Measures D-shape character of upper half of flux
+  surfaces. Average over flux surface of local upper triangularity. Used for shape
+  optimization and MHD stability analysis.
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

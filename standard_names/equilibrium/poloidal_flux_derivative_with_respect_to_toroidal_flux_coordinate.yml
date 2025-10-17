@@ -1,0 +1,12 @@
+name: poloidal_flux_derivative_with_respect_to_toroidal_flux_coordinate
+description: Radial derivative of poloidal flux with respect to toroidal flux coordinate.
+documentation: Derivative $d\psi/d\rho_{tor}$ relating poloidal flux to toroidal flux
+  coordinate changes. Used in flux coordinate transformations and transport calculations.
+  Related to safety factor through $q = (d\Phi_{tor}/d\psi)(d\psi/d\rho_{tor})^{-1}(d\Phi_{tor}/d\rho_{tor})^{-1}$.
+unit: Wb.m^-1
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+- spatial-profile
+kind: scalar

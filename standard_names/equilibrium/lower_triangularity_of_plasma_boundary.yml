@@ -1,0 +1,11 @@
+name: lower_triangularity_of_plasma_boundary
+description: Lower triangularity of plasma boundary.
+documentation: Lower triangularity $\delta_{lower}$ characterizing D-shape of lower
+  half of plasma boundary. Defined as horizontal displacement of lower midplane point
+  from geometric axis normalized by minor radius. Important for divertor configuration
+  and heat flux distribution in lower single-null plasmas.
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

@@ -1,0 +1,34 @@
+name: current_from_poloidal_field_coil
+description: Electric current flowing through a poloidal field coil (per turn).
+documentation: 'Electric current flowing through one turn of the poloidal field coil.
+  The total magneto-motive force (MMF) is obtained by multiplying by the number of
+  turns:
+
+
+  $$\text{MMF} = N \cdot I$$
+
+
+  Sign convention: positive current flows from side 1 to side 2 inside the coil, corresponding
+  to counter-clockwise direction when viewed from above (consistent with positive
+  toroidal direction). This convention ensures consistency with right-hand rule for
+  magnetic field direction.
+
+
+  The magnetic field produced by the coil at a point is calculated using the Biot-Savart
+  law:
+
+
+  $$\mathbf{B}(\mathbf{r}) = \frac{\mu_0 N I}{4\pi} \oint \frac{d\mathbf{l} \times
+  (\mathbf{r} - \mathbf{r''})}{|\mathbf{r} - \mathbf{r''}|^3}$$
+
+
+  Typical PF coil currents range from 1 kA to 50 kA depending on machine size and
+  coil function. Time-dependent measurements are used for equilibrium reconstruction,
+  shape control, and plasma current evolution analysis.'
+unit: A
+status: draft
+tags:
+- coils-and-control
+- measured
+- time-dependent
+kind: scalar

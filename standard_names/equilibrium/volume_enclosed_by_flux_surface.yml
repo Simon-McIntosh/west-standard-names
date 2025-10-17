@@ -1,0 +1,21 @@
+name: volume_enclosed_by_flux_surface
+description: Volume enclosed inside a toroidal magnetic flux surface.
+documentation: 'Volume $V(\rho)$ enclosed by a toroidal magnetic flux surface at radial
+  position $\rho$. For axisymmetric toroidal geometry:
+
+
+  $$V(\rho) = \int_0^\rho 2\pi R \, dA$$
+
+
+  where the integral is over the poloidal cross-sectional area up to the flux surface.
+
+
+  This quantity is essential for volume-averaged quantities, particle inventory calculations,
+  and transport analysis. The derivative $dV/d\rho$ relates to the flux surface area
+  and appears in transport equations.'
+unit: m^3
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

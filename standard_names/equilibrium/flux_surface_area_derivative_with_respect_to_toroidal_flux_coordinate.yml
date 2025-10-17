@@ -1,0 +1,12 @@
+name: flux_surface_area_derivative_with_respect_to_toroidal_flux_coordinate
+description: Derivative of flux surface cross-sectional area with respect to toroidal
+  flux coordinate.
+documentation: Radial derivative $dA/d\rho_{tor}$ of poloidal cross-sectional area.
+  Used in transport codes for geometry factors in diffusion and convection terms.
+  Related to volume derivative through flux surface geometry.
+unit: m
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

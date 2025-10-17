@@ -1,0 +1,13 @@
+name: f_multiplied_by_poloidal_flux_derivative_of_f
+description: Radial profile of F function multiplied by derivative of F with respect
+  to poloidal flux.
+documentation: Profile of $F(\psi) F'(\psi)$ where $F = R B_{tor}$ is poloidal current
+  function and $F' = dF/d\psi$. Appears in Grad-Shafranov equation source term representing
+  toroidal field contribution. Related to toroidal plasma current and bootstrap current.
+  Negative $F F'$ corresponds to paramagnetic toroidal current.
+unit: T.m
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

@@ -1,0 +1,14 @@
+name: poloidal_magnetic_flux_profile
+description: Radial profile of poloidal magnetic flux.
+documentation: 'Poloidal magnetic flux $\psi(\rho)$ as function of flux surface coordinate.
+  Fundamental solution of Grad-Shafranov equation: $\Delta^* \psi = -\mu_0 R^2 p''(\psi)
+  - F F''(\psi)$ where $\Delta^*$ is elliptic operator. Used to define normalized
+  flux coordinate $\psi_{norm} = (\psi - \psi_{axis})/(\psi_{boundary} - \psi_{axis})$.
+  Monotonically increasing from axis to boundary.'
+unit: Wb
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+- spatial-profile
+kind: scalar

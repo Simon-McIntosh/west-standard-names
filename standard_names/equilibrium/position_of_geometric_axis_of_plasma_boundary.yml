@@ -1,0 +1,12 @@
+name: position_of_geometric_axis_of_plasma_boundary
+description: Position of geometric center of plasma boundary.
+documentation: 'Two-dimensional position vector $(R, Z)$ of the geometric axis of
+  the plasma boundary in cylindrical coordinates. Geometric axis defined as midpoint
+  of bounding box: $R_{axis} = (R_{min} + R_{max})/2$ and $Z_{axis} = (Z_{min} + Z_{max})/2$.
+  Used as reference point for plasma shaping parameters (elongation, triangularity).'
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: vector

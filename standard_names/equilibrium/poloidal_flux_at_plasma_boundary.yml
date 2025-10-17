@@ -1,0 +1,12 @@
+name: poloidal_flux_at_plasma_boundary
+description: Poloidal magnetic flux at plasma boundary surface.
+documentation: Poloidal magnetic flux $\psi$ at the plasma boundary. For diverted
+  plasmas, equals the separatrix flux $\psi_{sep}$. For limited plasmas, equals flux
+  at limiter contact point. Related to normalized flux by $\psi_{norm} = (\psi - \psi_{axis})/(\psi_{boundary}
+  - \psi_{axis})$. Fundamental quantity in Grad-Shafranov equilibrium solution.
+unit: Wb
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+kind: scalar

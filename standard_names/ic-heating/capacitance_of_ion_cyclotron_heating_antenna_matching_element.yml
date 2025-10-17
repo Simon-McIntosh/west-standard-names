@@ -1,0 +1,15 @@
+name: capacitance_of_ion_cyclotron_heating_antenna_matching_element
+description: Capacitance value of impedance matching element in ion cyclotron heating
+  system.
+documentation: Capacitance of a tunable matching element used to optimize impedance
+  matching between the transmission line and the antenna. Matching networks typically
+  use vacuum variable capacitors that can be adjusted during operation to minimize
+  reflected power. Capacitance values typically range from hundreds of pF to several
+  nF.
+unit: F
+status: draft
+tags:
+- ic-heating
+- calibrated
+- time-dependent
+kind: scalar

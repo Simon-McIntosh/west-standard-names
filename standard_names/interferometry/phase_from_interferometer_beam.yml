@@ -1,0 +1,19 @@
+name: phase_from_interferometer_beam
+description: Phase shift measured by interferometer, corrected for fringe jumps.
+documentation: "Interferometric phase shift measured by the diagnostic system, with\
+  \ 2\u03C0 fringe-jump corrections applied. The phase shift is related to line-integrated\
+  \ electron density through the dispersion relation:\n\n$$\\Delta \\phi = \\frac{r_e\
+  \ \\lambda}{2} \\int n_e \\, dl$$\n\nwhere $r_e = 2.818 \\times 10^{-15}$ m is the\
+  \ classical electron radius, $\\lambda$ is the laser wavelength, and the integral\
+  \ is along the beam path. Fringe jump correction algorithms unwrap the phase to\
+  \ provide continuous measurements through density transients. Raw phase data may\
+  \ contain discontinuities; this corrected version should be continuous and monotonic\
+  \ during plasma buildup."
+unit: rad
+status: draft
+tags:
+- interferometry
+- calibrated
+- measured
+- time-dependent
+kind: scalar

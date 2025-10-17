@@ -1,0 +1,14 @@
+name: flux_surface_averaged_inverse_major_radius
+description: Flux surface average of inverse major radius.
+documentation: Flux surface averaged $\langle 1/R \rangle$. Geometric moment related
+  to toroidal effects and 1/R weighting. Used in neoclassical theory for toroidal
+  corrections and trapped particle physics. Appears in bootstrap current and rotation
+  damping calculations.
+unit: m^-1
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+- flux-surface-average
+- spatial-profile
+kind: scalar

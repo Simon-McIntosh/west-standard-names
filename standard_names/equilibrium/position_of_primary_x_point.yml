@@ -1,0 +1,12 @@
+name: position_of_primary_x_point
+description: Position vector of primary X-point.
+documentation: Two-dimensional position vector $(R, Z)$ of the primary X-point in
+  cylindrical coordinates. Marks the magnetic null where poloidal field vanishes ($\mathbf{B}_{pol}
+  = 0$) and separatrix branches intersect. Fundamental topological feature defining
+  diverted plasma configuration and divertor geometry.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: vector

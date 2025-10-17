@@ -1,0 +1,13 @@
+name: radial_position_of_outboard_point_at_midplane
+description: Radial coordinate of outboard flux surface point at midplane.
+documentation: Major radius $R_{outboard}(\rho)$ of outboard midplane intersection
+  of flux surface. Defines outer limit of flux surface at $Z = Z_{mag}$. Minor radius
+  $a = (R_{outboard} - R_{inboard})/2$. Shafranov shift and elongation affect outboard
+  position. Used for profile mapping and coordinate transformations.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+- spatial-profile
+kind: scalar

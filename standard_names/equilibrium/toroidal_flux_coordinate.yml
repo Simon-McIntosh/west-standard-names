@@ -1,0 +1,14 @@
+name: toroidal_flux_coordinate
+description: Radial profile of toroidal flux coordinate.
+documentation: 'Toroidal flux coordinate $\rho_{tor} = \sqrt{\Phi_{tor}/(\pi B_0)}$
+  where $\Phi_{tor}$ is toroidal flux and $B_0$ is vacuum toroidal field at reference
+  position. Dimensional radial coordinate in meters. Related to normalized coordinate:
+  $\rho_{tor,norm} = \rho_{tor}/\rho_{tor,boundary}$. Used in transport codes and
+  profile fitting.'
+unit: m
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+- spatial-profile
+kind: scalar

@@ -1,0 +1,21 @@
+name: cross_sectional_area_of_flux_surface
+description: Poloidal cross-sectional area enclosed by flux surface.
+documentation: 'Poloidal cross-sectional area $A(\rho)$ enclosed by a flux surface
+  at radial position $\rho$, calculated as the area bounded by the flux surface contour
+  in the $(R,Z)$ poloidal plane.
+
+
+  For circular cross-sections, $A = \pi a^2$ where $a$ is the minor radius. For shaped
+  plasmas, the area must be calculated by integrating over the actual flux surface
+  boundary.
+
+
+  This quantity is used in calculating volume-averaged plasma parameters and appears
+  in the relationship $V = 2\pi R_{geom} A$ for toroidal geometry, where $R_{geom}$
+  is the geometric center major radius.'
+unit: m^2
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

@@ -1,0 +1,13 @@
+name: safety_factor
+description: Radial profile of safety factor.
+documentation: 'Safety factor profile $q(\rho) = (r/R_0)(B_{tor}/B_{pol})$ measuring
+  field line winding. Ratio of toroidal to poloidal field line turns: after $q$ toroidal
+  transits, field line completes one poloidal turn. Monotonic $q$ profiles stabilize
+  MHD but limit performance. Reversed shear ($dq/d\rho < 0$ in core) enables internal
+  transport barriers.'
+status: draft
+tags:
+- equilibrium
+- mhd-stability-analysis
+- spatial-profile
+kind: scalar

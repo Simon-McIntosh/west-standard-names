@@ -1,0 +1,15 @@
+name: forward_power_from_ion_cyclotron_heating_antenna
+description: Forward RF power arriving at the back of an ion cyclotron heating antenna
+  module.
+documentation: Forward radio frequency power measured at the back of an individual
+  antenna module, before entering the plasma-facing structures. This measurement is
+  typically obtained from directional couplers in the transmission line. The difference
+  between forward and reflected power gives the net power delivered to the plasma.
+unit: W
+status: draft
+tags:
+- ic-heating
+- measured
+- raw-data
+- time-dependent
+kind: scalar

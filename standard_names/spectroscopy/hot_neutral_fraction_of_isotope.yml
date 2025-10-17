@@ -1,0 +1,14 @@
+name: hot_neutral_fraction_of_isotope
+description: Fraction of hot neutrals relative to total neutrals for a specific isotope.
+documentation: Fraction of hot neutrals relative to the total neutral population for
+  a specific isotope, defined as $f_{hot} = n_{hot} / (n_{cold} + n_{hot})$. Dimensionless
+  quantity between 0 and 1, where $f_{hot} + f_{cold} = 1$. Hot neutrals are produced
+  by charge exchange between plasma ions and background neutrals, carrying energies
+  comparable to ion temperature (typically tens of eV to keV). Extracted from spectral
+  line shape analysis using multi-Gaussian fits to separate cold and hot components.
+status: draft
+tags:
+- spectroscopy
+- measured
+- time-dependent
+kind: scalar

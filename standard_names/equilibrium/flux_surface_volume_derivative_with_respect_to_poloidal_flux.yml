@@ -1,0 +1,11 @@
+name: flux_surface_volume_derivative_with_respect_to_poloidal_flux
+description: Derivative of flux surface volume with respect to poloidal flux.
+documentation: Radial derivative $dV/d\psi$ of volume enclosed by flux surface with
+  respect to poloidal flux. Related to flux surface area through $dV/d\psi = (dV/d\rho)(d\rho/d\psi)$.
+  Used in transport equation formulations and particle balance calculations.
+unit: Wb^-1.m^3
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

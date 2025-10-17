@@ -1,0 +1,12 @@
+name: position_of_magnetic_axis
+description: Position vector of magnetic axis.
+documentation: Two-dimensional position vector $(R, Z)$ of the magnetic axis in cylindrical
+  coordinates. Defines the point where $\mathbf{B}_{pol} = 0$ and flux surfaces are
+  centered. Fundamental reference point for flux coordinate systems and plasma equilibrium
+  characterization.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: vector

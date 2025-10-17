@@ -1,0 +1,12 @@
+name: radial_position_of_magnetic_axis
+description: Major radius of magnetic axis location.
+documentation: 'Radial coordinate (major radius $R$) of the magnetic axis where $\mathbf{B}_{pol}
+  = 0$ and $|\mathbf{B}|$ is maximum. Innermost point of nested flux surfaces defining
+  plasma geometric center. Shafranov shift moves magnetic axis outward from geometric
+  axis due to finite pressure and current. Typical shift: 5-15 cm in medium-size tokamaks.'
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: scalar

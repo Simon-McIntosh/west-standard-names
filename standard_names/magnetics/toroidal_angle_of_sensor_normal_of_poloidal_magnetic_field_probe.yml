@@ -1,0 +1,20 @@
+name: toroidal_angle_of_sensor_normal_of_poloidal_magnetic_field_probe
+description: Toroidal angle of sensor normal axis projection of poloidal field probe.
+documentation: 'Angle $\phi_n$ of the horizontal projection of the sensor normal axis
+  with respect to the direction of increasing major radius $\nabla R$. Measured counter-clockwise
+  from above (consistent with toroidal coordinate convention).
+
+
+  **Convention:** Values taken modulo $\pi$ within $(-\pi/2, \pi/2]$. $\phi_n = 0$
+  when the projected sensor normal is parallel to $\nabla R$ (radially outward), $\phi_n
+  = \pi/2$ when parallel to $\nabla\phi$ (toroidal direction).
+
+
+  This angle, combined with the poloidal angle, fully defines the sensor normal direction
+  and determines which magnetic field component is measured.'
+unit: rad
+status: draft
+tags:
+- magnetics
+- local-measurement
+kind: scalar

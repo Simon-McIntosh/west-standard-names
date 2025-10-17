@@ -1,0 +1,12 @@
+name: number_of_atoms_of_element_in_molecule
+description: Number of atoms of a specific element present in a molecule.
+documentation: "Number of atoms of a specific element within a molecule. For atomic\
+  \ species this is 1 (e.g., H, D, He). For diatomic molecules: 2 (e.g., H\u2082,\
+  \ D\u2082, HD). For more complex molecules, the stoichiometric coefficient for that\
+  \ element (e.g., for CH\u2084, carbon has 1, hydrogen has 4). Used to interpret\
+  \ molecular spectroscopy and calculate molecular densities from measured emission\
+  \ intensities."
+status: draft
+tags:
+- spectroscopy
+kind: scalar

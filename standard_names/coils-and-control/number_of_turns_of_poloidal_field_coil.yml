@@ -1,0 +1,22 @@
+name: number_of_turns_of_poloidal_field_coil
+description: Number of effective turns in a poloidal field coil element for calculating
+  magnetic fields.
+documentation: 'Number of effective turns in the poloidal field coil element, including
+  the sign convention (positive for counter-clockwise current when viewed from above).
+  This parameter is multiplied by the coil current to obtain the total magneto-motive
+  force (MMF) producing the magnetic field:
+
+
+  $$\text{MMF} = N \cdot I$$
+
+
+  where $N$ is the number of turns and $I$ is the current per turn. The effective
+  turn count may differ from the physical number of windings due to series/parallel
+  connections or partial coil segments. Sign convention: positive turns indicate current
+  flowing counter-clockwise when viewed from above (positive toroidal direction).
+  Used in equilibrium reconstruction and coil current calculations.'
+status: draft
+tags:
+- coils-and-control
+- calibrated
+kind: scalar

@@ -1,0 +1,12 @@
+name: maximum_magnetic_field_strength_on_flux_surface
+description: Maximum magnetic field strength on flux surface (obsolescent).
+documentation: Maximum value of magnetic field magnitude $B_{max}$ on each flux surface.
+  Occurs at inboard midplane for standard tokamak due to $1/R$ toroidal field variation.
+  **Note:** Marked as obsolescent in IMAS DD v3.5.0. Used for trapped particle fraction
+  and mirror ratio calculations.
+unit: T
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

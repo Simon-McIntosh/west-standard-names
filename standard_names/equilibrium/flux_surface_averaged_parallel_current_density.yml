@@ -1,0 +1,13 @@
+name: flux_surface_averaged_parallel_current_density
+description: Flux surface averaged parallel plasma current density.
+documentation: 'Flux surface averaged parallel current density $\langle j_{\parallel}
+  \rangle$ flowing along magnetic field lines. Sum of Ohmic, bootstrap, and beam/RF-driven
+  currents. Related to safety factor: $q = d\Phi_{tor}/d\psi$ and current profile
+  shape affects stability. Peaked profiles with low edge current favor stability.'
+unit: A.m^-2
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

@@ -1,0 +1,15 @@
+name: flux_surface_averaged_parallel_ohmic_current_density
+description: Radial profile of parallel Ohmic current density.
+documentation: 'Flux surface averaged Ohmic current density $\langle j_{Ohm} \rangle$
+  from resistive diffusion of toroidal electric field. Dominant current source in
+  Ohmic plasmas: $j_{Ohm} = \sigma E_{tor}$ where $\sigma \propto T_e^{3/2}$. In auxiliary
+  heated plasmas, supplemented by bootstrap and driven currents. Skin current during
+  current ramp.'
+unit: A.m^-2
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- ohmic-heating
+- spatial-profile
+kind: scalar

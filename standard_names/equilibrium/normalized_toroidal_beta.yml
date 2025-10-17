@@ -1,0 +1,13 @@
+name: normalized_toroidal_beta
+description: Normalized toroidal beta parameter.
+documentation: 'Normalized toroidal beta $\beta_N$ defined as $\beta_N = 100 \beta_t
+  a[m] B_0[T] / I_p[MA]$ where $a$ is minor radius, $B_0$ is toroidal field, and $I_p$
+  is plasma current. Dimensionless measure of pressure relative to operational limits.
+  Troyon limit: $\beta_N < 4$ for MHD stability. Advanced tokamaks target $\beta_N
+  \sim 2-3$.'
+status: draft
+tags:
+- equilibrium
+- global-quantity
+- performance-metric
+kind: scalar

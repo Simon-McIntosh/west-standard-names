@@ -1,0 +1,34 @@
+name: current_from_passive_loop
+description: Induced current flowing in a passive axisymmetric conductor loop.
+documentation: 'Current induced in a passive axisymmetric conducting loop by time-varying
+  magnetic flux. Passive loops are non-connected conductors (distinct from active
+  coil circuits) that respond to changing magnetic fields through electromagnetic
+  induction.
+
+
+  The induced current is governed by Faraday''s law and the loop resistance:
+
+
+  $$V_{induced} = -\frac{d\psi}{dt} = I R$$
+
+
+  $$I = -\frac{1}{R}\frac{d\psi}{dt}$$
+
+
+  where $\psi$ is the poloidal magnetic flux threading the loop, $R$ is the loop resistance,
+  and $I$ is the resulting current. The sign convention follows the right-hand rule:
+  positive current flows counter-clockwise when viewed from above.
+
+
+  Passive loop currents provide stabilization against vertical displacement events
+  and contribute to plasma position control. Time constants are determined by the
+  loop inductance and resistance: $\tau = L/R$. Important for MHD stability analysis,
+  disruption mitigation, and understanding electromagnetic coupling between plasma
+  and conducting structures.'
+unit: A
+status: draft
+tags:
+- coils-and-control
+- measured
+- time-dependent
+kind: scalar

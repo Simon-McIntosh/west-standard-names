@@ -1,0 +1,11 @@
+name: flux_surface_averaged_lower_triangularity
+description: Radial profile of flux surface averaged lower triangularity.
+documentation: Flux surface averaged lower triangularity $\langle \delta_{lower} \rangle$
+  with respect to magnetic axis. Measures D-shape character of lower half of flux
+  surfaces. Important for divertor configuration and vertical asymmetry characterization.
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

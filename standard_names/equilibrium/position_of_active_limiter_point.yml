@@ -1,0 +1,11 @@
+name: position_of_active_limiter_point
+description: Position vector of active limiter contact point.
+documentation: Two-dimensional position vector $(R, Z)$ of the active limiter point
+  in cylindrical coordinates. Marks the tangency point between plasma boundary and
+  limiter surface, defining the outer edge of confined plasma in limited configuration.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: vector

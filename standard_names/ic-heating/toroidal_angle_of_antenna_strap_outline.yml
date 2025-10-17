@@ -1,0 +1,14 @@
+name: toroidal_angle_of_antenna_strap_outline
+description: "Toroidal angle (\u03C6 coordinate) of antenna strap outline points in\
+  \ cylindrical coordinates."
+documentation: Toroidal angle coordinate defining the outline geometry of an ion cyclotron
+  heating antenna strap. The angle is measured counter-clockwise when viewing from
+  above. Combined with R and Z coordinates, this defines the complete three-dimensional
+  strap geometry.
+unit: rad
+status: draft
+tags:
+- ic-heating
+- calibrated
+- cylindrical-coordinates
+kind: scalar

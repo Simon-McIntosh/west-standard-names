@@ -1,0 +1,12 @@
+name: reconstructed_poloidal_magnetic_flux_from_flux_loop
+description: Reconstructed poloidal flux from equilibrium solution through flux loop.
+documentation: Poloidal magnetic flux $\psi$ calculated from reconstructed equilibrium
+  by integrating poloidal field over flux loop area. Difference from measured value
+  indicates reconstruction residual and solution quality for this diagnostic channel.
+unit: Wb
+status: draft
+tags:
+- magnetics
+- equilibrium-reconstruction
+- reconstructed
+kind: scalar

@@ -1,0 +1,13 @@
+name: reconstructed_faraday_rotation_angle
+description: Reconstructed Faraday angle from equilibrium solution along diagnostic
+  chord.
+documentation: Faraday rotation angle $\theta_F$ calculated from reconstructed equilibrium
+  by integrating magnetic field and density along polarimetry chord. Comparison with
+  measured value assesses equilibrium reconstruction quality and poloidal field accuracy.
+unit: rad
+status: draft
+tags:
+- interferometry
+- equilibrium-reconstruction
+- reconstructed
+kind: scalar

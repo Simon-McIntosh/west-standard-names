@@ -1,0 +1,12 @@
+name: flux_surface_averaged_elongation
+description: Radial profile of flux surface averaged elongation.
+documentation: 'Flux surface averaged elongation $\langle \kappa \rangle$ measuring
+  vertical extent. Average of local elongation over flux surface. Related to vertical
+  stability: high $\kappa$ improves confinement but requires active control. Typical
+  values: 1.5-2.0 in modern tokamaks. Affects beta limit and MHD stability.'
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

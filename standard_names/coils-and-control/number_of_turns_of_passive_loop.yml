@@ -1,0 +1,21 @@
+name: number_of_turns_of_passive_loop
+description: Effective number of turns in passive loop element for magnetic field
+  calculations.
+documentation: "Number of effective turns in the passive loop cross-section element\
+  \ used for calculating magnetic fields. This value includes the sign of the number\
+  \ of turns: positive indicates current flows counter-clockwise when viewed from\
+  \ above (positive toroidal direction), negative indicates clockwise flow. The sign\
+  \ convention follows the right-hand rule for current direction.\n\nThis parameter\
+  \ is essential for relating induced currents to magnetic field contributions via\
+  \ Amp\xE8re's law:\n\n$$\\mathbf{B}_{loop} = \\frac{\\mu_0 N I}{2\\pi r}$$\n\nwhere\
+  \ $N$ is the number of turns, $I$ is the loop current, and $r$ is the distance from\
+  \ the loop center. The effective turns account for the actual winding geometry and\
+  \ any series/parallel connections in the loop structure.\n\nUsed in MHD equilibrium\
+  \ reconstruction, passive stabilization analysis, and eddy current calculations\
+  \ for passive conducting structures."
+status: draft
+tags:
+- coils-and-control
+- calibrated
+- local-measurement
+kind: scalar

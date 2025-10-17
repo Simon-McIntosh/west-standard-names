@@ -1,0 +1,13 @@
+name: pressure_amplitude_from_ion_cyclotron_heating_antenna
+description: Amplitude of pressure measurement at ion cyclotron heating antenna module.
+documentation: Pressure measured near the antenna module, typically in the transmission
+  line or matching network. Pressure variations can indicate vacuum leaks, gas puffing
+  effects, or plasma-antenna interactions. Monitoring pressure is important for preventing
+  arcing and maintaining operational reliability.
+unit: Pa
+status: draft
+tags:
+- ic-heating
+- measured
+- time-dependent
+kind: scalar

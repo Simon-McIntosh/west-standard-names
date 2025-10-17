@@ -1,0 +1,13 @@
+name: radial_position_of_primary_strike_point
+description: Major radius of primary strike point location.
+documentation: Radial coordinate (major radius $R$) of the primary strike point where
+  the separatrix intersects the divertor target plate. Strike point is where field
+  lines from the confined plasma first contact material surfaces. Location determines
+  heat and particle flux distribution on divertor tiles. For double-null, primary
+  strike point is at the more active X-point.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: scalar

@@ -1,0 +1,12 @@
+name: flux_surface_surface_area
+description: Radial profile of toroidal surface area of flux surfaces.
+documentation: 'Surface area $S(\rho)$ of toroidal flux surface. For axisymmetric
+  plasma: $S = \oint dl_{pol} \cdot 2\pi R$ integrated around poloidal circumference.
+  Used in particle balance and plasma-wall interaction calculations. Related to volume
+  through $dV/d\rho = S$ for certain coordinate choices.'
+unit: m^2
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

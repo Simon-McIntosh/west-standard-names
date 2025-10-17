@@ -1,0 +1,18 @@
+name: path_length_variation_from_interferometer_beam
+description: Optical path length variation due to plasma refractive index changes.
+documentation: "Optical path length variation caused by plasma-induced changes in\
+  \ the refractive index along the interferometer beam path. Related to the phase\
+  \ shift by:\n\n$$\\Delta L = \\frac{\\lambda \\Delta \\phi}{2\\pi}$$\n\nwhere $\\\
+  lambda$ is the wavelength and $\\Delta \\phi$ is the measured phase shift. This\
+  \ quantity represents the effective physical path length change due to the plasma's\
+  \ dispersive properties. For typical tokamak plasmas with $n_e \\sim 10^{19}$ m\u207B\
+  \xB3, path length variations are on the order of micrometers to millimeters depending\
+  \ on wavelength and chord geometry."
+unit: m
+status: draft
+tags:
+- interferometry
+- derived
+- measured
+- time-dependent
+kind: scalar
