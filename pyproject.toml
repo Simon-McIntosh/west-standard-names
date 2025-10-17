@@ -20,3 +20,7 @@ build-backend = "hatchling.build"
 
 [tool.hatch.version]
 source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["macros.py", "standard_names", "mkdocs.yml", "docs"]
