@@ -1,0 +1,13 @@
+name: flux_surface_averaged_parallel_bootstrap_current_density
+description: Flux surface averaged parallel bootstrap current density.
+documentation: Flux surface averaged bootstrap current density $\langle j_{bs} \rangle$
+  driven by pressure gradient and trapped particles. Neoclassical self-generated current
+  scaling as $j_{bs} \propto \beta_{pol} \nabla p$. Can provide 50-80% of plasma current
+  in advanced tokamak scenarios. Essential for steady-state operation.
+unit: A.m^-2
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

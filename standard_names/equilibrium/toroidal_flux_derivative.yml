@@ -1,0 +1,13 @@
+name: toroidal_flux_derivative
+description: Radial profile of radial derivative of toroidal flux.
+documentation: Radial gradient $d\Phi_{tor}/d\rho$ of toroidal flux. Related to flux
+  surface area and magnetic field through flux conservation. Used in transport calculations
+  for flux gradient terms. Determines relationship between flux coordinates and geometric
+  coordinates. Essential for coordinate system transformations.
+unit: Wb
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+- spatial-profile
+kind: scalar

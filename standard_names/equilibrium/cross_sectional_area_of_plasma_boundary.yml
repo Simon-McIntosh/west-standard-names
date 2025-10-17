@@ -1,0 +1,12 @@
+name: cross_sectional_area_of_plasma_boundary
+description: Cross-sectional area of plasma boundary in poloidal plane.
+documentation: Poloidal cross-sectional area $A$ of plasma boundary at last closed
+  flux surface. Calculated as area enclosed by boundary contour in $(R,Z)$ plane.
+  Related to volume by $V = 2\pi R_{geom} A$ for circular cross-sections. Used in
+  calculating averaged plasma density and shape factor calculations.
+unit: m^2
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

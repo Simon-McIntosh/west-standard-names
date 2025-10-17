@@ -1,0 +1,13 @@
+name: plasma_pressure
+description: Radial profile of plasma pressure.
+documentation: 'Total plasma pressure $p(\rho)$ including thermal electrons, ions,
+  and fast particles: $p = \sum_s n_s T_s + p_{fast}$. Key Grad-Shafranov input determining
+  Shafranov shift and pressure-driven currents. Related to beta: $\beta = 2\mu_0 \langle
+  p \rangle / B_0^2$. Typical profiles: peaked on-axis with gradient scale length
+  0.2-0.4 m.'
+unit: Pa
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

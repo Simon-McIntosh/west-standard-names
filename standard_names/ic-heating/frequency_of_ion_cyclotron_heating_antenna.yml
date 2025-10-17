@@ -1,0 +1,13 @@
+name: frequency_of_ion_cyclotron_heating_antenna
+description: Operating frequency of ion cyclotron heating antenna system.
+documentation: Radio frequency at which the ion cyclotron heating antenna operates,
+  typically in the range of 25-100 MHz for tokamak plasmas. The frequency is tuned
+  to match ion cyclotron resonance conditions for efficient heating and current drive.
+  This is the average frequency across all modules of the antenna system.
+unit: Hz
+status: draft
+tags:
+- ic-heating
+- measured
+- time-dependent
+kind: scalar

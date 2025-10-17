@@ -1,0 +1,12 @@
+name: flux_surface_area
+description: Radial profile of flux surface area.
+documentation: 'Flux surface area $A(\rho)$ of each nested toroidal surface. Used
+  in transport calculations and particle/energy balance. Related to volume: $dV/d\rho
+  = A(\rho)$. Larger area increases plasma-wall interaction. For circular flux surfaces:
+  $A \approx 2\pi R_0 (2\pi a)$. Shaping (elongation, triangularity) increases area.'
+unit: m^2
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

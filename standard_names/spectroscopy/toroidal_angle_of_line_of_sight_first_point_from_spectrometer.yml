@@ -1,0 +1,16 @@
+name: toroidal_angle_of_line_of_sight_first_point_from_spectrometer
+description: "Toroidal angle (\u03C6 coordinate) of the first point defining the spectrometer\
+  \ line of sight."
+documentation: "Toroidal angle coordinate \u03C6 of the first endpoint of the spectrometer\
+  \ diagnostic line of sight in cylindrical coordinates (R, \u03C6, Z). Convention:\
+  \ \u03C6 is oriented counter-clockwise when viewing from above (looking down the\
+  \ negative Z-axis), with \u03C6 = 0 typically at the machine reference position.\
+  \ Together with R and Z coordinates, defines the 3D position of the line of sight\
+  \ starting point."
+unit: rad
+status: draft
+tags:
+- spectroscopy
+- cylindrical-coordinates
+- local-measurement
+kind: scalar

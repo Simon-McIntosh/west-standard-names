@@ -1,0 +1,12 @@
+name: minor_radius_of_plasma_boundary
+description: Minor radius of plasma boundary.
+documentation: 'Minor radius $a$ of the plasma boundary, defined as half the radial
+  extent: $a = (R_{max} - R_{min})/2$ where $R_{max}$ and $R_{min}$ are the outermost
+  and innermost major radius values of the boundary contour. Characteristic plasma
+  size parameter used in normalized plasma parameters and scaling laws.'
+unit: m
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

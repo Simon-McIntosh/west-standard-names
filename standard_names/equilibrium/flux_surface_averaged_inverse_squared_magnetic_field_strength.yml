@@ -1,0 +1,13 @@
+name: flux_surface_averaged_inverse_squared_magnetic_field_strength
+description: Flux surface average of inverse squared magnetic field strength.
+documentation: Flux surface averaged $\langle 1/B^2 \rangle$. Geometric moment appearing
+  in neoclassical transport coefficients and bootstrap current calculations. Important
+  for trapped particle fraction and banana orbit width. Used in Sauter bootstrap current
+  formula.
+unit: T^-2
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

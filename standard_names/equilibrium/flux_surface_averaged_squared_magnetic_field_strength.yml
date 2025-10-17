@@ -1,0 +1,12 @@
+name: flux_surface_averaged_squared_magnetic_field_strength
+description: Flux surface average of squared magnetic field strength.
+documentation: Flux surface averaged $\langle B^2 \rangle$. Geometric moment used
+  in MHD equilibrium analysis and pressure balance calculations. Related to magnetic
+  energy density. Used for calculating magnetic pressure contributions.
+unit: T^2
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

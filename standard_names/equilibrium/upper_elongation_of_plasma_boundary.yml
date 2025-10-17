@@ -1,0 +1,11 @@
+name: upper_elongation_of_plasma_boundary
+description: Upper half elongation of plasma boundary.
+documentation: Elongation $\kappa_{upper}$ of upper half of plasma boundary relative
+  to geometric axis. Defined as $(Z_{max} - Z_{axis})/(R_{max} - R_{min})$ where $Z_{axis}$
+  is the geometric axis height. Asymmetry between upper and lower elongation indicates
+  vertical asymmetry in plasma shape.
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

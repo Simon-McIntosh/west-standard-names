@@ -1,0 +1,13 @@
+name: magnetic_field_line_length_for_single_poloidal_transit
+description: Radial profile of magnetic field line length for single poloidal transit.
+documentation: 'Connection length $L_{conn}(\rho)$ for one complete poloidal circuit
+  following magnetic field line. Increases with safety factor: $L_{conn} \approx q
+  \cdot 2\pi R_0$. Parallel transport timescale $\tau_{\parallel} = L_{conn}^2 / (2
+  \chi_{\parallel})$. Important for impurity transport and parallel heat conduction.
+  Edge connection length affects SOL physics.'
+unit: m
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

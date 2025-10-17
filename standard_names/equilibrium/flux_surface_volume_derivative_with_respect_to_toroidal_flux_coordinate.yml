@@ -1,0 +1,11 @@
+name: flux_surface_volume_derivative_with_respect_to_toroidal_flux_coordinate
+description: Derivative of flux surface volume with respect to toroidal flux coordinate.
+documentation: Radial derivative $dV/d\rho_{tor}$ of volume enclosed by flux surface.
+  Equals flux surface area in toroidal flux coordinates. Used in transport codes for
+  volume-integrated quantities and particle/energy balance equations.
+unit: m^2
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

@@ -1,0 +1,22 @@
+name: gas_flow_rate_from_gas_injection_valve
+description: Gas flow rate measured at the exit of a gas injection valve.
+documentation: "Gas flow rate at the exit of a gas injection valve, measured in pressure-volume\
+  \ per unit time (Pa\u22C5m\xB3\u22C5s\u207B\xB9). This unit represents the product\
+  \ of pressure and volumetric flow rate, commonly used for gas injection systems\
+  \ in fusion devices.\n\nThe measurement characterizes the instantaneous gas delivery\
+  \ rate from valve systems connecting gas bottles to injection pipes. Flow rate is\
+  \ time-dependent and controlled by valve actuation. Typical applications include\
+  \ fueling, puffing for density control, and disruption mitigation gas injection.\n\
+  \nThe unit Pa\u22C5m\xB3\u22C5s\u207B\xB9 = N\u22C5m\u207B\xB2\u22C5m\xB3\u22C5\
+  s\u207B\xB9 = N\u22C5m\u22C5s\u207B\xB9 = J\u22C5s\u207B\xB9 = W, equivalent to\
+  \ power. This reflects the work rate of gas injection against plasma pressure. Conversion\
+  \ to particle flux requires temperature: $\\Gamma = \\frac{Q}{k_B T}$ where Q is\
+  \ this flow rate, T is gas temperature, and $k_B$ is Boltzmann constant."
+unit: Pa.m^3.s^-1
+status: draft
+tags:
+- fueling
+- local-measurement
+- measured
+- time-dependent
+kind: scalar

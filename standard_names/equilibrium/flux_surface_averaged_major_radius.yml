@@ -1,0 +1,14 @@
+name: flux_surface_averaged_major_radius
+description: Radial profile of flux surface averaged major radius.
+documentation: Flux surface averaged major radius $\langle R \rangle$ weighted by
+  inverse Jacobian. Defines effective geometric center of flux surface. Used in neoclassical
+  transport calculations and trapped particle fraction. Shafranov shift increases
+  $\langle R \rangle$ with pressure. Related to toroidal current via force balance.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+- flux-surface-average
+- spatial-profile
+kind: scalar

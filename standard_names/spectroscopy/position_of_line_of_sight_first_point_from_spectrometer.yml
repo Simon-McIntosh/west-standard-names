@@ -1,0 +1,15 @@
+name: position_of_line_of_sight_first_point_from_spectrometer
+description: 3D position vector of the first point defining the spectrometer line
+  of sight.
+documentation: "Three-dimensional position vector (R, \u03C6, Z) of the first endpoint\
+  \ defining the spectrometer diagnostic line of sight in cylindrical coordinates.\
+  \ R is the major radius, \u03C6 is the toroidal angle (rad), and Z is the height.\
+  \ This vector, together with the second point vector, completely defines the viewing\
+  \ chord geometry through the plasma for line-integrated spectroscopic measurements."
+unit: m
+status: draft
+tags:
+- spectroscopy
+- cylindrical-coordinates
+- local-measurement
+kind: vector

@@ -1,0 +1,17 @@
+name: power_from_soft_xray_detector
+description: Total radiant power received by soft X-ray detector.
+documentation: "Total radiant power received by the soft X-ray detector in a specific\
+  \ energy band. This is the raw or calibrated signal proportional to the photon flux\
+  \ integrated over the detector area and acceptance solid angle. Power is related\
+  \ to brightness by: $P = B \\cdot G$ where $B$ is brightness and $G$ is the detector's\
+  \ \xE9tendue. For absolute measurements, proper calibration accounts for detector\
+  \ efficiency, filter transmission, and electronic gain. Power signals are used for\
+  \ MHD activity monitoring, radiation loss estimates, and tomographic reconstruction\
+  \ after normalization by \xE9tendue."
+unit: W
+status: draft
+tags:
+- radiation-diagnostics
+- measured
+- time-dependent
+kind: scalar

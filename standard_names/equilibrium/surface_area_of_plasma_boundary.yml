@@ -1,0 +1,12 @@
+name: surface_area_of_plasma_boundary
+description: Surface area of toroidal plasma boundary.
+documentation: 'Surface area $S$ of the toroidal flux surface forming the plasma boundary.
+  For axisymmetric plasma: $S = \oint dl_{pol} \cdot 2\pi R$ where integral is around
+  poloidal circumference. Related to plasma-wall interaction area and particle confinement
+  time. Larger surface-to-volume ratio increases particle losses.'
+unit: m^2
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

@@ -1,0 +1,34 @@
+name: diamagnetic_flux
+description: Diamagnetic flux measured by diamagnetic loop diagnostic.
+documentation: 'Diamagnetic flux $\Phi_{dia}$ measured by a diamagnetic loop encircling
+  the plasma. This quantity is directly related to the plasma stored energy.
+
+
+  The diamagnetic flux measures the reduction in poloidal flux linkage due to plasma
+  pressure (diamagnetic effect). For a large-aspect-ratio circular plasma:
+
+
+  $$\Phi_{dia} \approx -\mu_0 R_0 \int p \, dV \propto -W_{th}$$
+
+
+  where $R_0$ is the major radius, $p$ is plasma pressure, and $W_{th}$ is the thermal
+  stored energy.
+
+
+  More generally, the diamagnetic flux is related to the poloidal beta:
+
+
+  $$\beta_p = \frac{8\pi}{\mu_0} \frac{\langle p \rangle V}{I_p^2} \approx -\frac{2\Phi_{dia}}{\mu_0
+  R_0 I_p}$$
+
+
+  Diamagnetic loops are toroidally symmetric coils that measure the difference in
+  poloidal flux with and without plasma. Used for real-time stored energy monitoring
+  and plasma control.'
+unit: Wb
+status: draft
+tags:
+- magnetics
+- measured
+- time-dependent
+kind: scalar

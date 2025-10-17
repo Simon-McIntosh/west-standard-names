@@ -1,0 +1,25 @@
+name: poloidal_angle_of_sensor_normal_of_poloidal_magnetic_field_probe
+description: Poloidal angle of sensor normal axis orientation of poloidal field probe.
+documentation: 'Angle $\theta_n$ defining the poloidal orientation of the sensor normal
+  axis (vector parallel to the coil axis) with respect to the horizontal plane. This
+  is a clockwise theta-like angle.
+
+
+  **Convention:** $\theta_n = 0$ when the sensor normal is fully horizontal and points
+  toward increasing major radius. Values range in $[0, 2\pi]$.
+
+
+  The sensor normal axis direction $\mathbf{n}$ is:
+
+
+  $$\mathbf{n} = \cos(\theta_n)\cos(\phi_n)\nabla R - \sin(\theta_n)\nabla Z + \cos(\theta_n)\sin(\phi_n)\frac{\nabla\phi}{|\nabla\phi|}$$
+
+
+  where $\phi_n$ is the toroidal angle of the sensor normal. The probe measures the
+  magnetic field component $\mathbf{B} \cdot \mathbf{n}$ along this direction.'
+unit: rad
+status: draft
+tags:
+- magnetics
+- local-measurement
+kind: scalar

@@ -1,0 +1,13 @@
+name: voltage_phase_from_ion_cyclotron_heating_antenna
+description: Phase angle of voltage signal measured at ion cyclotron heating antenna
+  module.
+documentation: Phase of the RF voltage signal at the antenna module. Phase relationship
+  between voltage and current determines the reactive and resistive components of
+  antenna impedance. Used for impedance matching analysis and antenna tuning optimization.
+unit: rad
+status: draft
+tags:
+- ic-heating
+- measured
+- time-dependent
+kind: scalar

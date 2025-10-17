@@ -1,0 +1,13 @@
+name: plasma_thermal_energy
+description: Total thermal energy of confined plasma.
+documentation: 'Total thermal energy $W_{th}$ of plasma including electron and ion
+  contributions: $W_{th} = \frac{3}{2} \int (n_e T_e + \sum_i n_i T_i) dV$. Stored
+  energy in plasma thermal pressure. Related to energy confinement time $\tau_E =
+  W_{th}/P_{input}$. For H-mode: typically 0.1-10 MJ depending on device size and
+  heating power.'
+unit: J
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

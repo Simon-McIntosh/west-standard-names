@@ -1,0 +1,23 @@
+name: electron_temperature
+description: Electron temperature in plasma.
+documentation: 'Electron temperature $T_e$ representing the average kinetic energy
+  of electrons in the plasma. Related to the electron thermal velocity by:
+
+
+  $$v_{th,e} = \sqrt{\frac{2 T_e}{m_e}}$$
+
+
+  where $m_e$ is the electron mass.
+
+
+  Electron temperature is typically measured by Thomson scattering, electron cyclotron
+  emission (ECE), or charge exchange spectroscopy. In tokamak core plasmas, $T_e$
+  ranges from ~100 eV to 10+ keV. Temperature profiles are crucial for transport analysis,
+  fusion reactivity calculations, and plasma confinement studies.'
+unit: eV
+status: draft
+tags:
+- core-physics
+- measured
+- spatial-profile
+kind: scalar

@@ -1,0 +1,13 @@
+name: radial_position_of_geometric_axis
+description: Radial profile of geometric major radius of flux surfaces.
+documentation: Geometric major radius $R_{geo}(\rho) = (R_{inboard} + R_{outboard})/2$
+  defining flux surface center. Increases with radius due to Shafranov shift from
+  pressure and current. Used for approximate geometric calculations and profile mapping.
+  Differs from flux surface averaged $\langle R \rangle$ by $O(\epsilon^2)$ corrections.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+- spatial-profile
+kind: scalar

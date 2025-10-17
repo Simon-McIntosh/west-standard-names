@@ -1,0 +1,13 @@
+name: reference_radial_position_of_vacuum_toroidal_magnetic_field
+description: Reference major radius where vacuum toroidal magnetic field is specified.
+documentation: Reference major radius $R_0$ where the vacuum toroidal magnetic field
+  $B_0$ is defined. Typically chosen at the machine geometric center or vessel midplane.
+  Together with `toroidal_component_of_vacuum_magnetic_field_at_reference_position`,
+  defines the vacuum toroidal field profile $B_{tor}(R) \approx B_0 R_0 / R$ for equilibrium
+  calculations and flux coordinate normalization.
+unit: m
+status: draft
+tags:
+- magnetics
+- calibrated
+kind: scalar

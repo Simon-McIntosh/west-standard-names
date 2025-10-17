@@ -1,0 +1,11 @@
+name: lower_elongation_of_plasma_boundary
+description: Lower half elongation of plasma boundary.
+documentation: Elongation $\kappa_{lower}$ of lower half of plasma boundary relative
+  to geometric axis. Defined as $(Z_{axis} - Z_{min})/(R_{max} - R_{min})$ where $Z_{axis}$
+  is the geometric axis height. Used to characterize vertical asymmetry in plasma
+  shape, particularly in single-null diverted configurations.
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

@@ -1,0 +1,11 @@
+name: vertical_position_of_active_limiter_point
+description: Height of active limiter contact point.
+documentation: Vertical coordinate (height $Z$) of the active limiter point. Together
+  with radial position defines the $(R, Z)$ location where plasma boundary touches
+  the limiter, establishing the outermost confined flux surface in limited operation.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: scalar

@@ -1,0 +1,17 @@
+name: cold_neutral_temperature_of_isotope
+description: Temperature characterizing the cold neutral population for a specific
+  isotope.
+documentation: Temperature characterizing the energy distribution of the cold neutral
+  population for a specific isotope, typically <1 eV. Determined from Doppler broadening
+  analysis of spectral lines, where the line width $\Delta\lambda$ relates to temperature
+  as $\Delta\lambda / \lambda = \sqrt{2kT/mc^2}$, with $m$ the neutral mass and $c$
+  the speed of light. Cold neutrals originate primarily from molecular dissociation
+  and wall recycling processes. Temperature values typically 0.1-1 eV in edge and
+  divertor regions.
+unit: eV
+status: draft
+tags:
+- spectroscopy
+- measured
+- time-dependent
+kind: scalar

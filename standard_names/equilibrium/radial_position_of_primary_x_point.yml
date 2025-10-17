@@ -1,0 +1,13 @@
+name: radial_position_of_primary_x_point
+description: Major radius of primary X-point location.
+documentation: Radial coordinate (major radius $R$) of the primary X-point in diverted
+  plasma configuration. X-point is the magnetic null where poloidal field vanishes
+  and separatrix branches intersect. For single-null, this is the only X-point. For
+  double-null, primary X-point is typically the more active one (higher power flux).
+  Critical for divertor physics and strike point locations.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: scalar

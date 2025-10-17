@@ -1,0 +1,21 @@
+name: normalized_poloidal_flux_coordinate
+description: Normalized poloidal flux coordinate for radial position in flux coordinates.
+documentation: 'Normalized poloidal flux coordinate $\rho_{pol,norm}$ defined as:
+
+
+  $$\rho_{pol,norm} = \sqrt{\frac{\psi - \psi_{axis}}{\psi_{LCFS} - \psi_{axis}}}$$
+
+
+  where $\psi$ is the poloidal magnetic flux, $\psi_{axis}$ is the flux at the magnetic
+  axis, and $\psi_{LCFS}$ is the flux at the last closed flux surface (plasma boundary).
+
+
+  This coordinate varies from 0 at the magnetic axis to 1 at the plasma boundary.
+  It provides an alternative radial coordinate to $\rho_{tor,norm}$ and is particularly
+  useful for equilibrium reconstruction and MHD analysis.'
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+- spatial-profile
+kind: scalar

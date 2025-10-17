@@ -1,0 +1,12 @@
+name: vertical_position_of_magnetic_axis
+description: Height of magnetic axis location.
+documentation: Vertical coordinate (height $Z$) of the magnetic axis. For up-down
+  symmetric plasmas, magnetic axis typically near midplane ($Z \approx 0$). Vertical
+  asymmetry in shaping or current profile causes vertical displacement. Used for plasma
+  vertical position control and equilibrium reconstruction.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: scalar

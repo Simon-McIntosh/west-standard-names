@@ -1,0 +1,12 @@
+name: poloidal_flux_at_magnetic_axis
+description: Poloidal flux at magnetic axis location.
+documentation: 'Poloidal magnetic flux $\psi_{axis}$ at the magnetic axis where poloidal
+  field vanishes. Minimum value of poloidal flux function in confined region. Used
+  to normalize flux coordinates: $\psi_{norm} = (\psi - \psi_{axis})/(\psi_{boundary}
+  - \psi_{axis})$. Essential reference value in Grad-Shafranov equilibrium solution.'
+unit: Wb
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+kind: scalar

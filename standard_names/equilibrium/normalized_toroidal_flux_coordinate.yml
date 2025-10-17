@@ -1,0 +1,12 @@
+name: normalized_toroidal_flux_coordinate
+description: Radial profile of normalized toroidal flux coordinate.
+documentation: Normalized toroidal flux coordinate $\rho_{tor,norm}(\rho) = \sqrt{\Phi_{tor}/\Phi_{tor,boundary}}$.
+  Standard radial coordinate for IMAS equilibrium profiles. Monotonically increasing
+  from 0 (axis) to 1 (boundary). Used as independent variable for profiles_1d arrays.
+  Approximately equal to normalized minor radius in circular plasmas.
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+- spatial-profile
+kind: scalar

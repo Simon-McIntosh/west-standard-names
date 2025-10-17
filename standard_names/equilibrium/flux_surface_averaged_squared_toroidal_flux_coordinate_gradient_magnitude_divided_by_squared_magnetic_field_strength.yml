@@ -1,0 +1,14 @@
+name: flux_surface_averaged_squared_toroidal_flux_coordinate_gradient_magnitude_divided_by_squared_magnetic_field_strength
+description: Flux surface average of squared gradient magnitude divided by squared
+  field strength.
+documentation: Flux surface averaged geometric moment $\langle |\nabla \rho_{tor}|^2
+  / B^2 \rangle$. Metric coefficient in drift kinetic and gyrokinetic theories. Appears
+  in parallel transport calculations and field line curvature effects. Essential for
+  neoclassical transport modeling.
+unit: T^-2
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

@@ -1,0 +1,13 @@
+name: flux_surface_averaged_magnetic_field_strength
+description: Flux surface averaged magnetic field strength (obsolescent).
+documentation: Flux surface averaged magnetic field magnitude $\langle B \rangle$.
+  **Note:** This quantity is marked as obsolescent in IMAS Data Dictionary version
+  3.5.0. For neoclassical calculations, use geometric moments gm4 and gm5 instead.
+  Historically used for field strength characterization.
+unit: T
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

@@ -1,0 +1,12 @@
+name: radial_position_of_active_limiter_point
+description: Major radius of active limiter contact point.
+documentation: Radial coordinate (major radius $R$) of the active limiter point where
+  the plasma boundary contacts the limiter surface in limited configuration. This
+  defines the radial extent of the confined plasma and the location of maximum plasma-wall
+  interaction in limiter operation.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: scalar

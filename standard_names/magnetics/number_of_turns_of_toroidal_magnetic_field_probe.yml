@@ -1,0 +1,19 @@
+name: number_of_turns_of_toroidal_magnetic_field_probe
+description: Number of turns in the sensing coil of toroidal field probe.
+documentation: 'Number of wire turns $N$ in the toroidal magnetic field probe coil,
+  including sign convention for winding direction.
+
+
+  The induced voltage is proportional to the number of turns:
+
+
+  $$V = -N A \frac{dB_n}{dt}$$
+
+
+  where $A$ is the area per turn. More turns increase signal strength but may affect
+  frequency response due to increased inductance.'
+status: draft
+tags:
+- magnetics
+- calibrated
+kind: scalar

@@ -1,0 +1,23 @@
+name: fit_weight_of_electron_temperature_measurement
+description: Statistical weight assigned to measured electron temperature values in
+  profile fitting.
+documentation: 'Weight $w_i$ assigned to each measured electron temperature value
+  in the fitting process used to construct smooth radial profiles from discrete measurements.
+
+
+  Weights are typically based on measurement uncertainty: $w_i = 1/\sigma_i^2$ where
+  $\sigma_i$ is the standard deviation of measurement $i$. Higher weights are given
+  to more accurate measurements.
+
+
+  Used in least-squares minimization to obtain fitted profiles. The weighted chi-squared
+  is:
+
+
+  $$\chi^2 = \sum_i w_i^2 \frac{(T_{fit,i} - T_{meas,i})^2}{\sigma_i^2}$$'
+status: draft
+tags:
+- core-physics
+- derived
+- equilibrium-reconstruction
+kind: scalar

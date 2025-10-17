@@ -1,0 +1,22 @@
+name: thermal_electron_pressure
+description: Thermal electron pressure from random thermal motion only.
+documentation: 'Thermal electron pressure $p_{e,th}$ associated with random thermal
+  motion of the Maxwellian electron population, defined as:
+
+
+  $$p_{e,th} = n_{e,th} k_B T_e = n_{e,th} T_e \text{ [eV]}$$
+
+
+  where $n_{e,th}$ is the thermal electron density and $T_e$ is the electron temperature.
+
+
+  This quantity represents the pressure from thermal motion $\sim \langle (v - \langle
+  v \rangle)^2 \rangle$ and excludes directed motion and non-thermal populations.
+  It is the primary contribution to electron pressure in most tokamak plasmas.'
+unit: Pa
+status: draft
+tags:
+- core-physics
+- derived
+- spatial-profile
+kind: scalar

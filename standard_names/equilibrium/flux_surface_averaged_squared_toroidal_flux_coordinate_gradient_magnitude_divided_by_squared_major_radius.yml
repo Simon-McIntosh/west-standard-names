@@ -1,0 +1,14 @@
+name: flux_surface_averaged_squared_toroidal_flux_coordinate_gradient_magnitude_divided_by_squared_major_radius
+description: Flux surface average of squared gradient magnitude divided by squared
+  major radius.
+documentation: Flux surface averaged geometric moment $\langle |\nabla \rho_{tor}|^2
+  / R^2 \rangle$. Metric coefficient used in neoclassical transport theory and gyrokinetic
+  codes. Appears in drift kinetic equation and bounce-averaged transport coefficients.
+  Essential for accurate neoclassical conductivity calculations.
+unit: m^-2
+status: draft
+tags:
+- equilibrium
+- flux-surface-average
+- spatial-profile
+kind: scalar

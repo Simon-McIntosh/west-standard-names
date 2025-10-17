@@ -1,0 +1,12 @@
+name: poloidal_circumference_of_plasma_boundary
+description: Poloidal circumference of plasma boundary at outboard midplane.
+documentation: 'Poloidal circumference $L_{pol}$ of plasma boundary measured along
+  field line at outer midplane. Arc length around poloidal contour of boundary: $L_{pol}
+  = \oint \sqrt{dR^2 + dZ^2}$. Related to connection length and parallel transport.
+  Typical values: 10-30 m depending on elongation and device size.'
+unit: m
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

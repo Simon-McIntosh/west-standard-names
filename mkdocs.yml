@@ -1,0 +1,101 @@
+site_name: WEST Standard Names Documentation
+site_description: WEST tokamak standard names using DD version 3.42.2
+site_author: WEST Team
+site_url: https://west-standard-names.github.io/west-standard-names/
+
+repo_name: west-standard-names
+repo_url: https://github.com/west-standard-names/west-standard-names
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search:
+      lang: en
+  - macros:
+      module_name: macros
+  - mike:
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
+      canonical_version: latest
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  version:
+    provider: mike
+    default: latest
+
+nav:
+  - Home: index.md
+  - Standard Names:
+    - Overview: overview.md
+    - By Category:
+      - Coils And Control: tags/coils-and-control.md
+      - Core Physics: tags/core-physics.md
+      - Equilibrium: tags/equilibrium.md
+      - Fueling: tags/fueling.md
+      - Fundamental: tags/fundamental.md
+      - Ic Heating: tags/ic-heating.md
+      - Interferometry: tags/interferometry.md
+      - Magnetics: tags/magnetics.md
+      - Radiation Diagnostics: tags/radiation-diagnostics.md
+      - Spectroscopy: tags/spectroscopy.md
+docs_dir: docs
+site_dir: site

@@ -1,0 +1,17 @@
+name: hot_neutral_temperature_of_isotope
+description: Temperature characterizing the hot neutral population for a specific
+  isotope.
+documentation: 'Temperature characterizing the energy distribution of the hot neutral
+  population for a specific isotope, typically tens of eV to keV. Determined from
+  the broad Doppler-broadened component of spectral lines. Hot neutrals are produced
+  by charge exchange: $Ion^+ + Neutral^0 \rightarrow Ion^0 + Neutral^+$, carrying
+  away energy comparable to the ion temperature. Multi-component line fitting separates
+  hot and cold populations. Hot neutral temperature approximates local ion temperature
+  in regions where charge exchange is active.'
+unit: eV
+status: draft
+tags:
+- spectroscopy
+- measured
+- time-dependent
+kind: scalar

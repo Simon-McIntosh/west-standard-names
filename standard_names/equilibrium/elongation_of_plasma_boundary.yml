@@ -1,0 +1,12 @@
+name: elongation_of_plasma_boundary
+description: Elongation of plasma boundary cross-section.
+documentation: 'Elongation $\kappa$ of the plasma boundary, measuring vertical stretching
+  of the poloidal cross-section. Defined as ratio of vertical to horizontal extent.
+  Full elongation: $\kappa = (Z_{max} - Z_{min})/(R_{max} - R_{min})$. Higher elongation
+  improves confinement but reduces MHD stability margins. Typical values: 1.0 (circular)
+  to 2.0 (highly elongated).'
+status: draft
+tags:
+- equilibrium
+- global-quantity
+kind: scalar

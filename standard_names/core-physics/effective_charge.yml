@@ -1,0 +1,22 @@
+name: effective_charge
+description: Effective plasma charge number characterizing average ion charge state.
+documentation: 'Effective charge number $Z_{eff}$ defined as:
+
+
+  $$Z_{eff} = \frac{\sum_i n_i Z_i^2}{\sum_i n_i Z_i} = \frac{\sum_i n_i Z_i^2}{n_e}$$
+
+
+  where the sum is over all ion species with density $n_i$ and charge $Z_i$, and $n_e$
+  is the electron density.
+
+
+  $Z_{eff}$ characterizes the average ion charge state and impurity content. Pure
+  deuterium plasma has $Z_{eff} = 1$, while impurities increase $Z_{eff}$. Higher
+  $Z_{eff}$ increases plasma resistivity and bremsstrahlung radiation but can improve
+  energy confinement. Typical values: 1.5-3.0.'
+status: draft
+tags:
+- core-physics
+- derived
+- spatial-profile
+kind: scalar

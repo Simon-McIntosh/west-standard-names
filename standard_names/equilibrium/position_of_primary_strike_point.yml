@@ -1,0 +1,12 @@
+name: position_of_primary_strike_point
+description: Position vector of primary strike point.
+documentation: Two-dimensional position vector $(R, Z)$ of the primary strike point
+  in cylindrical coordinates. Defines the location where the separatrix intersects
+  the divertor target plate, establishing the boundary between private flux region
+  and scrape-off layer. Essential for divertor design and heat flux analysis.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: vector

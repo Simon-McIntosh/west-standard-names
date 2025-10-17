@@ -1,0 +1,20 @@
+name: number_of_turns_of_poloidal_magnetic_field_probe
+description: Number of turns in the sensing coil of poloidal field probe.
+documentation: 'Number of wire turns $N$ in the poloidal magnetic field probe coil,
+  including sign. Negative values can be used to indicate coil winding direction.
+
+
+  The induced voltage is proportional to the number of turns:
+
+
+  $$V = -N A \frac{dB_n}{dt}$$
+
+
+  where $A$ is the area per turn and $B_n$ is the field component along the sensor
+  normal. More turns increase signal amplitude but also increase inductance and may
+  reduce frequency response.'
+status: draft
+tags:
+- magnetics
+- calibrated
+kind: scalar

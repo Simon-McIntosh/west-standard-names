@@ -1,0 +1,12 @@
+name: vertical_position_of_primary_strike_point
+description: Height of primary strike point location.
+documentation: Vertical coordinate (height $Z$) of the primary strike point. Together
+  with radial position defines the $(R, Z)$ location where separatrix contacts divertor
+  target. Critical for calculating strike point angle, connection length, and divertor
+  heat flux footprint width.
+unit: m
+status: draft
+tags:
+- equilibrium
+- cylindrical-coordinates
+kind: scalar

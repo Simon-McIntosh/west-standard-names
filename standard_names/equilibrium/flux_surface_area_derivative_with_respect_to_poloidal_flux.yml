@@ -1,0 +1,12 @@
+name: flux_surface_area_derivative_with_respect_to_poloidal_flux
+description: Derivative of flux surface cross-sectional area with respect to poloidal
+  flux.
+documentation: Radial derivative $dA/d\psi$ of poloidal cross-sectional area with
+  respect to poloidal flux. Used in transport equation formulations relating flux-based
+  and geometric coordinates. Essential for source term calculations in transport modeling.
+unit: Wb^-1.m^2
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar

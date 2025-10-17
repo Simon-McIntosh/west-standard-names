@@ -1,0 +1,12 @@
+name: toroidal_flux_derivative_with_respect_to_poloidal_flux
+description: Radial profile of toroidal flux derivative with respect to poloidal flux.
+documentation: Derivative $d\Phi_{tor}/d\psi$ relating toroidal and poloidal flux
+  increments. Equals safety factor $q$ by definition. Used in flux coordinate transformations
+  and equilibrium solvers. Monotonically increasing for standard tokamak profiles.
+  Jump discontinuities indicate rational surfaces with magnetic islands.
+status: draft
+tags:
+- equilibrium
+- flux-coordinates
+- spatial-profile
+kind: scalar

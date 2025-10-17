@@ -1,0 +1,12 @@
+name: flux_surface_volume
+description: Radial profile of flux surface volume.
+documentation: 'Volume $V(\rho)$ enclosed within flux surface. Related to flux surface
+  area: $dV/d\rho = A(\rho)$. Used for calculating volume-averaged quantities and
+  particle content. For circular cross-section: $V \approx 2\pi^2 R_0 a^2$. Elongation
+  and triangularity increase volume for given minor radius.'
+unit: m^3
+status: draft
+tags:
+- equilibrium
+- spatial-profile
+kind: scalar
