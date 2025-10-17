@@ -22,6 +22,7 @@ This project provides a searchable, well-organized documentation of standard nam
 📚 **[View the Standard Names Documentation →](https://west-standard-names.github.io/west-standard-names/standard-names/)**
 
 The documentation includes:
+
 - Complete list of all standard names organized by category
 - Detailed descriptions and units for each quantity
 - LaTeX-rendered mathematical expressions
@@ -61,6 +62,7 @@ standard_names/
 ```
 
 Each standard name is defined in a YAML file with:
+
 - Standard name identifier
 - Unit of measurement
 - Detailed description

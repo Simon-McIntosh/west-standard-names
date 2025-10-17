@@ -16,12 +16,12 @@ def define_env(env):
     """
     This is the hook for defining variables, macros and filters
     """
-    
+
     # Add package version to environment variables
     try:
-        env.variables['package_version'] = version('west-standard-names')
+        env.variables["package_version"] = version("west-standard-names")
     except PackageNotFoundError:
-        env.variables['package_version'] = 'dev'
+        env.variables["package_version"] = "dev"
 
     @env.macro
     def load_standard_names():
