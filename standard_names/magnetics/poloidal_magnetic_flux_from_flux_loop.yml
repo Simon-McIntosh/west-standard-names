@@ -4,7 +4,7 @@ documentation: 'Poloidal magnetic flux threading through a flux loop coil, defin
   as the surface integral of the poloidal magnetic field:
 
 
-  $$\Phi_p = \int \mathbf{B}_p \cdot d\mathbf{A}$$
+  $$\psi = \int \mathbf{B}_p \cdot d\mathbf{A}$$
 
 
   where the integration is over the area enclosed by the loop.
@@ -18,7 +18,7 @@ documentation: 'Poloidal magnetic flux threading through a flux loop coil, defin
   By Faraday''s law, the induced voltage in the loop is:
 
 
-  $$V_{induced} = -\frac{d\Phi_p}{dt}$$
+  $$V_{induced} = -\frac{d\psi}{dt}$$
 
 
   Flux loop measurements are fundamental for equilibrium reconstruction, plasma current

@@ -1,10 +1,10 @@
 site_name: "WEST Tokamak: Standard Names"
 site_description: WEST tokamak standard names documentation
 site_author: WEST Team
-site_url: https://west-standard-names.github.io/west-standard-names/
+site_url: https://simon-mcintosh.github.io/west-standard-names/
 
-repo_name: west-standard-names
-repo_url: https://github.com/west-standard-names/west-standard-names
+repo_name: Simon-McIntosh/west-standard-names
+repo_url: https://github.com/Simon-McIntosh/west-standard-names
 
 theme:
   name: material
@@ -68,13 +68,11 @@ plugins:
       separator: '[\s\-,:!=\[\]()\"/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - macros:
       module_name: macros
-  - mike:
-      canonical_version: latest
-      version_selector: true
 
 # Watch additional directories for changes during development
 watch:
   - standard_names
+  - macros.py
 
 markdown_extensions:
   # Python Markdown
@@ -134,12 +132,9 @@ extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
-  version:
-    provider: mike
-    default: latest
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/west-standard-names/west-standard-names
+      link: https://github.com/Simon-McIntosh/west-standard-names
       name: GitHub Repository
   analytics:
     feedback:
@@ -155,7 +150,7 @@ extra:
           data: 0
           note: >
             Thanks for your feedback! Help us improve this page by
-            <a href="https://github.com/west-standard-names/west-standard-names/issues/new" target="_blank" rel="noopener">opening an issue</a>.
+            <a href="https://github.com/Simon-McIntosh/west-standard-names/issues/new" target="_blank" rel="noopener">opening an issue</a>.
 
 nav:
   - Home: index.md

@@ -13,7 +13,7 @@ This documentation provides a comprehensive reference for standard names used in
 The standard names are organized into the following categories:
 
 {% for tag, items in stats.tags.items() %}
-- **[{{ tag.replace('-', ' ').title() }}](tags/{{ tag }}.md)** - {{ items|length }} standard names
+- **[{{ tag.replace('-', ' ').title() }}](standard-names.md#{{ tag.replace('-', ' ').title().lower().replace(' ', '-') }})** - {{ items|length }} standard names
 {% endfor %}
 
 ## Statistics

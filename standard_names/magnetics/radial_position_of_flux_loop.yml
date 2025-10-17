@@ -11,7 +11,7 @@ documentation: 'Radial coordinate (major radius $R$) defining the spatial locati
   poloidal magnetic flux. The flux measured by the loop is defined as:
 
 
-  $$\Phi_p = \int \mathbf{B}_p \cdot d\mathbf{A}$$
+  $$\psi = \int \mathbf{B}_p \cdot d\mathbf{A}$$
 
 
   where the integration is over the surface enclosed by the loop. Accurate positioning

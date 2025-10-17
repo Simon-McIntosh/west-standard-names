@@ -205,6 +205,9 @@ def define_env(env):
 
         # Clean up the text first
         text = text.strip()
+        
+        # Handle escaped newlines from YAML
+        text = text.replace('\\n', '\n')
 
         # Split into paragraphs and process each one
         paragraphs = text.split("\n\n")
@@ -224,6 +227,14 @@ def define_env(env):
                 processed_paragraphs.append(paragraph)
             elif "$" in paragraph and paragraph.count("$") >= 2:
                 # Contains inline math
+                processed_paragraphs.append(paragraph)
+            # Handle lists (lines starting with - or *)
+            elif any(line.strip().startswith(('-', '*', '+')) for line in paragraph.split('\n')):
+                # This is a list, preserve newlines within it
+                processed_paragraphs.append(paragraph)
+            # Handle numbered lists
+            elif any(re.match(r'^\d+\.', line.strip()) for line in paragraph.split('\n')):
+                # This is a numbered list, preserve newlines within it
                 processed_paragraphs.append(paragraph)
             else:
                 # Regular text paragraph
@@ -268,3 +279,50 @@ def define_env(env):
             result += f"- **[{category_name}](standard-names.md#{category_anchor})** - {count} standard names\n"
 
         return result.strip()
+
+    @env.macro
+    def display_category(category_name):
+        """Display all standard names for a specific category in detailed format"""
+        result = ""
+        tags = get_tags()
+        
+        if category_name not in tags:
+            return f"Category '{category_name}' not found."
+        
+        items = tags[category_name]
+        sorted_items = sorted(items, key=lambda x: x.get("name", ""))
+
+        for item in sorted_items:
+            name = item.get("name", "Unknown")
+            unit = item.get("unit", "")
+            description = item.get("description", "")
+            documentation = item.get("documentation", "")
+            item_tags = item.get("tags", [])
+            status = item.get("status", "")
+
+            # Format tags as simple text
+            tags_display = (
+                ", ".join(f"`{tag}`" for tag in item_tags) if item_tags else "None"
+            )
+
+            # Use h3 for standard names
+            result += f"### {name}\n\n"
+
+            # Order: description, docs, unit, status, tags
+            result += f"{description}\n\n"
+
+            if documentation:
+                result += f"{_fix_markdown_formatting(documentation)}\n\n"
+
+            if unit:
+                result += f"**Unit:** `{unit}`\n\n"
+
+            if status:
+                result += f"**Status:** {status.title()}\n\n"
+
+            if item_tags:
+                result += f"**Tags:** {tags_display}\n\n"
+
+            result += "---\n\n"
+
+        return result

@@ -10,10 +10,10 @@ documentation: 'Three-dimensional position vector $(R, Z, \phi)$ defining a poin
   via Faraday''s law:
 
 
-  $$V = -\frac{d\Phi_p}{dt}$$
+  $$V = -\frac{d\psi}{dt}$$
 
 
-  where $V$ is the induced voltage and $\Phi_p$ is the poloidal magnetic flux enclosed
+  where $V$ is the induced voltage and $\psi$ is the poloidal magnetic flux enclosed
   by the loop.'
 unit: m
 status: draft

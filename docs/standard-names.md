@@ -1,7 +1,3 @@
-# All Standard Names Overview
+# Standard Names
 
-This page provides a complete list of all standard names across all categories.
-
-{% set all_names = load_standard_names() %}
-
-{{ standard_names_table(all_names, show_category=True, show_full_description=True) }}
+{{ standard_names_clean_list() }}

@@ -1,4 +1,4 @@
-name: poloidal_flux
+name: poloidal_magnetic_flux_profile
 description: Radial profile of poloidal magnetic flux.
 documentation: 'Poloidal magnetic flux $\psi(\rho)$ as function of flux surface coordinate.
   Fundamental solution of Grad-Shafranov equation: $\Delta^* \psi = -\mu_0 R^2 p''(\psi)

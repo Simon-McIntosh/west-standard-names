@@ -9,13 +9,13 @@ documentation: 'Current induced in a passive axisymmetric conducting loop by tim
   The induced current is governed by Faraday''s law and the loop resistance:
 
 
-  $$V_{induced} = -\frac{d\Phi}{dt} = I R$$
+  $$V_{induced} = -\frac{d\psi}{dt} = I R$$
 
 
-  $$I = -\frac{1}{R}\frac{d\Phi}{dt}$$
+  $$I = -\frac{1}{R}\frac{d\psi}{dt}$$
 
 
-  where $\Phi$ is the poloidal magnetic flux threading the loop, $R$ is the loop resistance,
+  where $\psi$ is the poloidal magnetic flux threading the loop, $R$ is the loop resistance,
   and $I$ is the resulting current. The sign convention follows the right-hand rule:
   positive current flows counter-clockwise when viewed from above.
 
