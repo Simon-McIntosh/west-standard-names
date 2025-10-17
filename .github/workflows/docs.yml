@@ -3,17 +3,13 @@ name: Deploy WEST Standard Names Documentation
 on:
   push:
     branches:
-      - main
-      - master
       - develop
   pull_request:
     branches:
-      - main
-      - master
       - develop
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -22,14 +18,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0  # Fetch full history for Mike versioning
+        fetch-depth: 0  # Fetch full history for versioning
 
     - name: Setup Python
       uses: actions/setup-python@v4
@@ -46,18 +42,28 @@ jobs:
         uv sync
         uv pip install hatch-vcs
 
-    - name: Configure Git
+    - name: Build documentation
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        uv run mkdocs build --clean
 
-    - name: Build and deploy with Mike
-      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop')
-      run: |
-        uv run mike deploy --push --update-aliases v0.1 latest
-        uv run mike set-default --push latest
+    - name: Setup Pages
+      if: github.event_name == 'push'
+      uses: actions/configure-pages@v4
 
-    - name: Build documentation (PR check)
-      if: github.event_name == 'pull_request'
-      run: |
-        uv run mkdocs build
+    - name: Upload artifact
+      if: github.event_name == 'push'
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'site'
+
+  deploy:
+    if: github.event_name == 'push'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

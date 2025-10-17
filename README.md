@@ -1,6 +1,6 @@
 # WEST Tokamak: Standard Names
 
-[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://west-standard-names.github.io/west-standard-names/)
+[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://simon-mcintosh.github.io/west-standard-names/)
 [![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 
 Comprehensive standard names documentation for the WEST (W Environment in Steady-state Tokamak) facility, based on DD version 3.42.2.
@@ -19,7 +19,7 @@ This project provides a searchable, well-organized documentation of standard nam
 
 ## Documentation
 
-📚 **[View the Standard Names Documentation →](https://west-standard-names.github.io/west-standard-names/standard-names/)**
+📚 **[View the Standard Names Documentation →](https://simon-mcintosh.github.io/west-standard-names/)**
 
 The documentation includes:
 
