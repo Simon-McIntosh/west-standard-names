@@ -205,9 +205,9 @@ def define_env(env):
 
         # Clean up the text first
         text = text.strip()
-        
+
         # Handle escaped newlines from YAML
-        text = text.replace('\\n', '\n')
+        text = text.replace("\\n", "\n")
 
         # Split into paragraphs and process each one
         paragraphs = text.split("\n\n")
@@ -229,11 +229,16 @@ def define_env(env):
                 # Contains inline math
                 processed_paragraphs.append(paragraph)
             # Handle lists (lines starting with - or *)
-            elif any(line.strip().startswith(('-', '*', '+')) for line in paragraph.split('\n')):
+            elif any(
+                line.strip().startswith(("-", "*", "+"))
+                for line in paragraph.split("\n")
+            ):
                 # This is a list, preserve newlines within it
                 processed_paragraphs.append(paragraph)
             # Handle numbered lists
-            elif any(re.match(r'^\d+\.', line.strip()) for line in paragraph.split('\n')):
+            elif any(
+                re.match(r"^\d+\.", line.strip()) for line in paragraph.split("\n")
+            ):
                 # This is a numbered list, preserve newlines within it
                 processed_paragraphs.append(paragraph)
             else:
@@ -285,10 +290,10 @@ def define_env(env):
         """Display all standard names for a specific category in detailed format"""
         result = ""
         tags = get_tags()
-        
+
         if category_name not in tags:
             return f"Category '{category_name}' not found."
-        
+
         items = tags[category_name]
         sorted_items = sorted(items, key=lambda x: x.get("name", ""))
 
