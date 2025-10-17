@@ -1,0 +1,25 @@
+[project]
+name = "west-standard-names"
+dynamic = ["version"]
+description = "WEST tokamak standard names documentation using DD version 3.42.2"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs>=1.5.0",
+    "mkdocs-material>=9.5.0",
+    "mkdocs-macros-plugin>=1.0.0",
+    "mkdocs-minify-plugin>=0.8.0",
+    "pyyaml>=6.0",
+    "pymdown-extensions>=10.7.0",
+]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["macros.py", "standard_names", "mkdocs.yml", "docs"]

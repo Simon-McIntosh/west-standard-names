@@ -1,41 +1,25 @@
-# WEST Tokamak: Standard Names# WEST Tokamak: Standard Names
+# WEST Tokamak: Standard Names
 
+[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://simon-mcintosh.github.io/west-standard-names/)
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 
+Comprehensive standard names documentation for the WEST (W Environment in Steady-state Tokamak) facility, based on DD version 3.42.2.
 
-[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://west-standard-names.github.io/west-standard-names/)[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://west-standard-names.github.io/west-standard-names/)
+## Overview
 
-[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+This project provides a searchable, well-organized documentation of standard names used in WEST tokamak data, including:
 
-
-
-Comprehensive standard names documentation for the WEST (W Environment in Steady-state Tokamak) facility.Comprehensive standard names documentation for the WEST (W Environment in Steady-state Tokamak) facility, based on DD version 3.42.2.
-
-
-
-## Documentation## Overview
-
-
-
-📚 **[View the Standard Names Documentation →](https://west-standard-names.github.io/west-standard-names/standard-names/)**This project provides a searchable, well-organized documentation of standard names used in WEST tokamak data, including:
-
-
-
-## Development- **Core Physics**: Electron density, temperature, pressure, and effective charge
-
+- **Core Physics**: Electron density, temperature, pressure, and effective charge
 - **Equilibrium**: Plasma boundary parameters, flux surfaces, and magnetic field quantities
-
-All active development happens in the `develop` branch. The `main` branch contains stable releases only.- **Magnetics**: Magnetic field probes, flux loops, and diagnostic measurements
-
+- **Magnetics**: Magnetic field probes, flux loops, and diagnostic measurements
 - **Coils & Control**: PF coil parameters and passive loop characteristics
-
-To contribute, please create a pull request against the `develop` branch.- **Diagnostics**: Interferometry, spectroscopy, and radiation measurements
-
+- **Diagnostics**: Interferometry, spectroscopy, and radiation measurements
 - **Heating**: Ion cyclotron heating parameters
 - **Fueling**: Fueling system measurements
 
 ## Documentation
 
-📚 **[View the Standard Names Documentation →](https://west-standard-names.github.io/west-standard-names/standard-names/)**
+📚 **[View the Standard Names Documentation →](https://simon-mcintosh.github.io/west-standard-names/)**
 
 The documentation includes:
 
