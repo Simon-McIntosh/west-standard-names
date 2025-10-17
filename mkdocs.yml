@@ -1,5 +1,5 @@
-site_name: WEST Standard Names Documentation
-site_description: WEST tokamak standard names using DD version 3.42.2
+site_name: "WEST Tokamak: Standard Names"
+site_description: WEST tokamak standard names documentation
 site_author: WEST Team
 site_url: https://west-standard-names.github.io/west-standard-names/
 
@@ -14,88 +14,152 @@ theme:
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue
-      accent: blue
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue
-      accent: blue
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-
   features:
-    - navigation.tabs
-    - navigation.sections
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
     - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
+    - navigation.tracking
     - search.highlight
     - search.share
-    - content.code.copy
-    - content.code.annotate
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/atom-variant
+    repo: fontawesome/brands/github
 
 plugins:
   - search:
-      lang: en
+      separator: '[\s\-,:!=\[\]()\"/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - macros:
       module_name: macros
   - mike:
-      version_selector: true
-      css_dir: css
-      javascript_dir: js
       canonical_version: latest
+      version_selector: true
+
+# Watch additional directories for changes during development
+watch:
+  - standard_names
 
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.details
+  # Python Markdown
+  - abbr
   - admonition
   - attr_list
+  - def_list
+  - footnotes
   - md_in_html
-  - tables
   - toc:
       permalink: true
+      title: "Table of contents"
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: west-standard-names
+      repo: west-standard-names
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 extra_javascript:
   - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
   version:
     provider: mike
     default: latest
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/west-standard-names/west-standard-names
+      name: GitHub Repository
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://github.com/west-standard-names/west-standard-names/issues/new" target="_blank" rel="noopener">opening an issue</a>.
 
 nav:
   - Home: index.md
-  - Standard Names:
-    - Overview: overview.md
-    - By Category:
-      - Coils And Control: tags/coils-and-control.md
-      - Core Physics: tags/core-physics.md
-      - Equilibrium: tags/equilibrium.md
-      - Fueling: tags/fueling.md
-      - Fundamental: tags/fundamental.md
-      - Ic Heating: tags/ic-heating.md
-      - Interferometry: tags/interferometry.md
-      - Magnetics: tags/magnetics.md
-      - Radiation Diagnostics: tags/radiation-diagnostics.md
-      - Spectroscopy: tags/spectroscopy.md
+  - Standard Names: standard-names.md
+
 docs_dir: docs
 site_dir: site

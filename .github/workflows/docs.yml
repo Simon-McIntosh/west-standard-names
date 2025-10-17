@@ -40,7 +40,9 @@ jobs:
         version: "latest"
 
     - name: Install dependencies
-      run: uv sync
+      run: |
+        uv sync
+        uv pip install hatch-vcs
 
     - name: Configure Git
       run: |
