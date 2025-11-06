@@ -4,9 +4,9 @@ documentation: 'Toroidal extent of the antenna strap conductor. Wider straps pro
   better coupling but may have different spectral properties. This parameter affects
   the toroidal wave number spectrum of the launched RF power. Note: This field is
   marked obsolescent in IMAS Data Dictionary version 3.42.0.'
-unit: m
 status: draft
 tags:
 - ic-heating
 - calibrated
 kind: scalar
+unit: m

@@ -6,8 +6,8 @@ documentation: 'Atomic mass number A of an isotope, representing the total numbe
   = 3$, $A_{^4He} = 4$. Used to identify isotopes in spectroscopic measurements and
   calculate mass-dependent properties like gyroradius and neutral penetration depth.
   Combined with nuclear charge number Z determines the isotope uniquely.'
-unit: u
 status: draft
 tags:
 - spectroscopy
 kind: scalar
+unit: u

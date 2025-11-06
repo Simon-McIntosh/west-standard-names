@@ -7,9 +7,9 @@ documentation: Lower energy boundary of the soft X-ray detector's sensitive ener
   foils), and photon absorption characteristics. Multiple energy bands allow spectroscopic
   analysis and separation of different radiation contributions (bremsstrahlung, line
   emission).
-unit: eV
 status: draft
 tags:
 - radiation-diagnostics
 - calibrated
 kind: scalar
+unit: eV

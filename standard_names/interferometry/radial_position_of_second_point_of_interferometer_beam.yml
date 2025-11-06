@@ -6,10 +6,10 @@ documentation: Radial coordinate (major radius R) of the second geometric point 
   geometry), this is the intermediate reflection point (e.g., retroreflector position).
   The line connecting first and second points defines the beam path used for line-integrated
   density measurements.
-unit: m
 status: draft
 tags:
 - interferometry
 - cylindrical-coordinates
 - local-measurement
 kind: scalar
+unit: m

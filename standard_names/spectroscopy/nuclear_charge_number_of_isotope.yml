@@ -6,8 +6,8 @@ documentation: 'Nuclear charge number Z of an element, representing the number o
   and, together with the atomic mass number A, uniquely identifies the isotope. Essential
   for spectral line identification as Z determines the electronic structure and emission
   spectrum.'
-unit: e
 status: draft
 tags:
 - spectroscopy
 kind: scalar
+unit: e

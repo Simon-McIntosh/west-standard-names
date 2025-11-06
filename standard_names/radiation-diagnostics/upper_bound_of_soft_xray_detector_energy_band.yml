@@ -6,9 +6,9 @@ documentation: 'Upper energy boundary of the soft X-ray detector''s sensitive en
   and detector thickness. For tomographic reconstruction, multiple overlapping energy
   bands provide temperature and impurity density profile information. Typical upper
   bounds: 5-20 keV for core plasma diagnostics.'
-unit: eV
 status: draft
 tags:
 - radiation-diagnostics
 - calibrated
 kind: scalar
+unit: eV
