@@ -1,10 +1,10 @@
-# WEST Standard Names Documentation
+# Prototype Standard Names for WEST
 
-Welcome to the WEST tokamak standard names documentation using DD version 3.42.2.
+Welcome to documentation for a prototype collection of Standard Names based on the WEST experimental data processing chain using DD version 3.42.2.
 
 ## Overview
 
-This documentation provides a comprehensive reference for standard names used in the WEST tokamak experiment. Standard names are organized by functional categories and include detailed descriptions, units, and mathematical formulations.
+This documentation provides a comprehensive reference for standard names produced for the WEST tokamak experiment. Standard names are organized by functional categories and include detailed descriptions, units, and mathematical formulations.
 
 {% set stats = category_stats() %}
 
